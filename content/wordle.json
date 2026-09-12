@@ -1,0 +1,19 @@
+{
+  "_comment": "Word-guess game. Words can be ANY length (4-8) — the board adapts. Add as many as you want; one is picked per day.",
+  "words": [
+    { "w": "BUCUK",  "hint": "Panggilan kamu pas lagi gemesin banget.",        "reward": "Bucuk. Nggak ada di KBBI, ada di hati aku." },
+    { "w": "TOGA",   "hint": "Yang kamu pakai di hari paling bangga.",         "reward": "Toga itu berat. Kamu tetap berdiri tegak." },
+    { "w": "RUMAH",  "hint": "Arti 'Indonesiaku' sebenarnya.",                 "reward": "Kamu rumah. Bukan kiasan." },
+    { "w": "SAYANG", "hint": "Kata yang paling sering aku kirim ke kamu.",     "reward": "Diketik ribuan kali, masih nggak basi." },
+    { "w": "BUNGA",  "hint": "Yang kamu pegang di atas motor, 27 Juni 2024.",  "reward": "Bunganya layu. Perasaannya enggak." },
+    { "w": "PULANG", "hint": "Rasanya tiap aku ketemu kamu.",                  "reward": "Ketemu kamu itu rasanya pulang." },
+    { "w": "TETAP",  "hint": "Yang kita lakuin di tahun paling berat.",        "reward": "Kata kerja paling romantis yang aku tahu." },
+    { "w": "MILIK",  "hint": "Yang aku putusin tanggal 2 September 2024.",     "reward": "Milikku. Aku nggak nembak — aku mutusin." },
+    { "w": "JADWAL", "hint": "Alasan kamu ngechat aku pertama kali.",          "reward": "Pintu masuk paling nggak romantis sedunia." },
+    { "w": "KAMU",   "hint": "Jawaban dari semua pertanyaan.",                 "reward": "Kamu. Selalu kamu." },
+    { "w": "MOTOR",  "hint": "Tempat kamu duduk di belakang aku.",             "reward": "Pelan banget aku nyetir. Bukan karena jalanan." },
+    { "w": "BIOSKOP","hint": "Kencan pertama kita, tanpa satu pun foto.",      "reward": "Nol dokumentasi. Hari itu cuma punya kita." },
+    { "w": "TUJUAN", "hint": "Kamu buat aku, bukan pelarian tapi...",          "reward": "Tujuan. Bukan singgahan." },
+    { "w": "TUMBUH", "hint": "Yang kita lakuin walau susah.",                  "reward": "Masih struggling, masih thriving." }
+  ]
+}

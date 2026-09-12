@@ -1,0 +1,20 @@
+{
+  "_comment": "Add one per year at minimum. 'tone' rotates the card style: soft | funny | deep | tiny.",
+  "reasons": [
+    { "tone": "soft",  "text": "Karena kamu mulai semuanya dengan pertanyaan tentang jadwal kuliah. Hal paling nggak romantis di dunia, dan itu jadi pintu masuk hidup aku." },
+    { "tone": "funny", "text": "Karena kamu punya tiga nama panggilan dan aku pakai ketiganya tergantung level sayang hari itu. Bucuk kalau gemas, Aby kalau kangen, Bebelac Gold kalau kamu lagi nyebelin tapi tetap mahal." },
+    { "tone": "deep",  "text": "Karena kamu nggak pernah minta aku jadi versi yang lebih gampang dicintai. Kamu ambil versi yang capek juga." },
+    { "tone": "tiny",  "text": "Karena cara kamu ngomong 'udah makan belum' itu bunyinya kayak rumah." },
+    { "tone": "soft",  "text": "Karena di foto 27 Juni itu kamu megang bunga di atas motor, dan aku inget banget gimana rasanya takut kamu sadar aku gemetar." },
+    { "tone": "deep",  "text": "Karena tahun kemarin berat — duit, badan, kepala — dan kamu nggak sekalipun bikin aku ngerasa jadi beban." },
+    { "tone": "funny", "text": "Karena kita pernah nonton film berdua dan lupa foto sama sekali. Dua orang dewasa. Satu bioskop. Nol dokumentasi. Ikonik." },
+    { "tone": "tiny",  "text": "Karena kamu ketawa duluan sebelum lucunya sampai." },
+    { "tone": "soft",  "text": "Karena waktu kamu pakai toga, aku nggak lihat ijazah. Aku lihat semua malam yang kamu lewatin buat sampai ke sana." },
+    { "tone": "deep",  "text": "Karena kita berdua tahu rasanya kepala yang penuh, dan kita belajar buat nggak ninggalin satu sama lain di hari-hari itu." },
+    { "tone": "tiny",  "text": "Karena kamu satu-satunya orang yang aku kirimin hal random jam 2 pagi tanpa mikir dua kali." },
+    { "tone": "funny", "text": "Karena kamu bisa marah, ngambek, dan tetap nanyain aku udah minum obat belum di chat yang sama." },
+    { "tone": "soft",  "text": "Karena aku manggil kamu Indonesiaku sebelum aku ngerti sendiri kenapa. Sekarang ngerti: kamu tempat aku pulang." },
+    { "tone": "deep",  "text": "Karena kita nggak lagi bertahan. Kita milih. Dan milih itu jauh lebih susah dan jauh lebih berarti." },
+    { "tone": "tiny",  "text": "Karena dua tahun dan aku masih nengok dua kali tiap kamu lewat." }
+  ]
+}

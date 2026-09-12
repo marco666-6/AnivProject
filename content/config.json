@@ -1,0 +1,75 @@
+{
+  "_comment": "EDIT ME EACH YEAR. Everything here shows up on the site. No code changes needed.",
+
+  "site": {
+    "title": "Aniv — Marco & Aby",
+    "tagline": "dua tahun, dan masih milikku",
+    "favicon": "🤍"
+  },
+
+  "people": {
+    "her": {
+      "name": "Ayu Sihombing",
+      "short": "Ayu",
+      "nicknames": ["Aby", "Ayu Baby", "Bebelac Gold", "Bucuk"],
+      "initial": "A"
+    },
+    "him": {
+      "name": "Marco",
+      "short": "Marco",
+      "nicknames": ["Marco"],
+      "initial": "M"
+    }
+  },
+
+  "dates": {
+    "_comment": "ISO format YYYY-MM-DD. 'together' drives the live day-counter.",
+    "firstMessage": "2024-08-21",
+    "together": "2024-09-02",
+    "firstDate": "2024-09-16",
+    "firstDateApprox": true,
+    "anniversaryDay": "09-02"
+  },
+
+  "milestones": {
+    "_comment": "Extra counters shown under the main day-counter.",
+    "show": ["days", "hours", "months", "nextAnniversary"]
+  },
+
+  "hero": {
+    "kicker": "02 September 2024 — hari aku menyebutmu Indonesiaku",
+    "rotatingLines": [
+      "Aku nggak pernah nembak kamu. Aku cuma memutuskan kamu milikku.",
+      "Dua tahun. Masih kamu. Selalu kamu.",
+      "Bucuk, kalau dunia berat, kita berat bareng.",
+      "Kamu bukan sekadar pacarku. Kamu tujuanku.",
+      "Bebelac Gold — nutrisi terbaik buat hidupku.",
+      "We didn't have money, energy, or an easy year. We had each other. Cukup."
+    ],
+    "photo": "IMG_20240627_175729.jpg"
+  },
+
+  "theme": {
+    "_comment": "Tweak the whole colour mood from here.",
+    "ink": "#2b1d26",
+    "paper": "#fff7f2",
+    "rose": "#e0526d",
+    "roseDeep": "#a82f49",
+    "gold": "#d9a441",
+    "plum": "#6a3550",
+    "mint": "#7fb7a4"
+  },
+
+  "music": {
+    "_comment": "Drop an mp3 at public/audio/theme.mp3 and it will be used. Otherwise a soft generated lullaby plays.",
+    "file": "audio/theme.mp3",
+    "generatedFallback": true,
+    "defaultOn": false
+  },
+
+  "letterSectionTitle": "Surat, dari aku",
+  "reasonsTitle": "Alasan aku sayang kamu",
+  "galleryTitle": "Kita, dalam potongan-potongan",
+  "timelineTitle": "Jalan cerita kita",
+  "arcadeTitle": "Arcade Bucuk"
+}

@@ -1,0 +1,46 @@
+{
+  "_comment": "main = the big heartfelt letter. notes = short messages used by the scratch-card game and random click-to-reveal easter eggs. Add more every year.",
+  "main": {
+    "title": "Buat Aby, dua tahun kemudian",
+    "signature": "— Marco, yang masih milih kamu",
+    "paragraphs": [
+      "Aby. Bucuk. Bebelac Gold-ku.",
+      "Aku mau mulai dari hal yang kamu mungkin udah lupa. 21 Agustus 2024, kamu ngechat aku nanyain kampus, literatur, jadwal — katanya kangen panduan dosen. Sepele banget. Tapi aku inget aku baca chat itu berulang-ulang, mikirin mau bales apa biar nggak keliatan terlalu seneng. Itu hari pertama kamu masuk ke hidup aku lewat pintu yang sama sekali nggak romantis, dan sampai sekarang aku ketawa tiap inget.",
+      "Dua belas hari kemudian, tanggal 2 September, aku nggak nembak kamu. Nggak ada bunga, nggak ada lagu, nggak ada momen yang bisa difoto. Aku cuma memutuskan — di dalam kepala aku sendiri — bahwa kamu tujuanku, kamu punyaku, kamu pacarku. Hari itu aku manggil kamu Indonesiaku. Aku nggak bisa jelasin waktu itu kenapa kata itu yang keluar. Sekarang aku tahu: karena Indonesia itu tanah, rumah, tempat orang pulang. Dan kamu semuanya itu sekaligus.",
+      "Beberapa minggu setelahnya kita nonton bareng, kencan resmi pertama kita, dan kita lupa total buat foto. Nol dokumentasi. Dulu aku nyesel. Sekarang enggak — karena hari itu nggak dititipin ke siapa-siapa. Dia cuma punya kita.",
+      "Aku nggak mau nulis surat yang pura-pura dua tahun ini gampang. Nggak. Kita kesulitan uang. Badan aku sering nggak kompromi. Kepala kita berdua sama-sama capek di waktu yang sering barengan. Hubungan kita juga diuji, kadang sama dunia, kadang sama kita sendiri. Ada malam-malam yang aku nggak tahu harus ngomong apa ke kamu.",
+      "Tapi ini yang aku tahu pasti: kita nggak berhenti tumbuh. Setiap kali salah satu dari kita hampir jatuh, yang satunya narik. Kadang pelan, kadang telat, tapi selalu ada. Dan buat aku itu bukti yang lebih kuat daripada seribu hari yang mulus.",
+      "Tahun ini kamu pakai toga. Kamu berdiri di sana dengan medali dan topi yang kamu lempar ke udara, dan aku di bawah nepuk tangan paling kenceng sambil nahan mata. Karena aku tahu harganya. Aku lihat semuanya dari jarak paling dekat.",
+      "Halaman ini aku bikin sendiri, dari nol, buat kamu. Ada foto kita, ada cerita kita, ada game-game konyol yang aku bikin biar kamu ketawa. Tiap tahun aku bakal tambahin lagi. Anggap aja rumah kecil di internet yang isinya cuma kita berdua.",
+      "Selamat dua tahun, Indonesiaku. Aku nggak lagi bertahan sama kamu — aku milih kamu. Hari ini, besok, dan tiap tanggal 2 September setelah ini."
+    ]
+  },
+  "notes": [
+    "Kamu tetap hal terbaik yang pernah nanya jadwal kuliah ke aku.",
+    "Kalau kamu baca ini lagi capek: berhenti sebentar. Aku nggak ke mana-mana.",
+    "Bucuk, kamu cantik bahkan di webcam 720p yang jelek itu.",
+    "Aku masih inget bunga yang kamu pegang di atas motor malam itu.",
+    "Dua tahun dan aku masih deg-degan kalau kamu tiba-tiba nelpon.",
+    "Kamu bukan pelarian aku. Kamu tujuan aku.",
+    "Terima kasih udah bertahan di tahun yang nggak ramah itu.",
+    "Bebelac Gold: mahal, bergizi, dan cuma satu di dunia.",
+    "Kalau nanti kita punya rumah beneran, aku mau dapurnya menghadap timur. Biar kamu bangun sama matahari.",
+    "Aku bangga sama kamu. Bukan cuma pas wisuda — tiap hari biasa juga.",
+    "Aku nggak butuh kamu jadi versi yang lebih gampang. Versi ini aja.",
+    "Kamu Indonesiaku. Itu bukan gombalan, itu alamat rumah.",
+    "Kalau kamu nemu pesan ini dua kali, berarti semesta setuju sama aku.",
+    "Peluk. Panjang. Yang nggak buru-buru dilepas."
+  ],
+  "unlockables": {
+    "_comment": "Rewards revealed when she finishes games. Key must match a game id.",
+    "memory-match": "Foto-foto itu bukan cuma file di HP aku. Itu bukti kalau aku nggak pernah setengah-setengah sama kamu.",
+    "quiz": "Kalau kamu inget semua ini — berarti kita sama-sama nyimpen. Dan itu bikin aku tenang.",
+    "adventure": "Semua jalan di cerita itu ujungnya kamu. Itu bukan bug, itu memang sengaja.",
+    "catch-hearts": "Aku bakal nangkepin kamu tiap kali kamu jatuh. Sekalipun tangan aku penuh.",
+    "slide-puzzle": "Kita juga sempat berantakan. Terus pelan-pelan balik ke tempatnya masing-masing.",
+    "wordle": "Lima huruf, banyak arti. Tapi yang paling sering aku ketik tetap namamu.",
+    "constellation": "Aku udah gambar kamu di langit sebelum aku berani gambar kamu di hidup aku.",
+    "runner": "Lari terus, Buk. Aku di sebelah kamu, bukan di belakang.",
+    "scratch": "Tiap yang kamu gosok itu beneran aku tulis, satu-satu, sambil senyum sendiri."
+  }
+}

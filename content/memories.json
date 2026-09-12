@@ -1,0 +1,61 @@
+{
+  "_comment": "The timeline. Add a new entry each year — newest last. 'photo' is optional (filename from images/). 'icon' is any emoji.",
+  "entries": [
+    {
+      "date": "2024-08-21",
+      "icon": "📖",
+      "title": "Chat pertama yang bukan apa-apa",
+      "body": "Kamu ngechat nanyain kampus, literatur, jadwal — katanya kangen panduan dosen. Aku jawab sok santai. Padahal aku baca ulang chat kamu tiga kali sebelum bales. Nggak ada yang tahu ini awal dari semuanya.",
+      "photo": null,
+      "pin": true
+    },
+    {
+      "date": "2024-09-02",
+      "icon": "🇮🇩",
+      "title": "Hari aku menyebutmu Indonesiaku",
+      "body": "Nggak ada nembak. Nggak ada bunga, nggak ada lagu, nggak ada penonton. Cuma satu keputusan di kepala aku: dia tujuanku, dia punyaku, dia pacarku. Hari itu aku manggil kamu Indonesiaku — tanahku, rumahku, tempat aku pulang. Dan sampai hari ini kamu masih itu.",
+      "photo": "WIN_20240820_07_08_55_Pro.jpg",
+      "pin": true,
+      "anchor": true
+    },
+    {
+      "date": "2024-09-16",
+      "icon": "🎬",
+      "title": "Nonton, tanpa bukti",
+      "body": "Dua mingguan setelah tanggal 2. Kita nonton film di bioskop. Kita lupa foto — nggak ada satu pun dokumentasi. Dan entah kenapa itu justru bikin aku suka: hari itu cuma punya kita berdua, nggak dititipin ke kamera.",
+      "photo": null,
+      "approx": true
+    },
+    {
+      "date": "2025-01-01",
+      "icon": "🌧️",
+      "title": "Tahun yang nggak ramah",
+      "body": "Duit seret. Badan aku sering nggak kuat. Kepala kita berdua sama-sama capek. Hubungan kita juga diuji berkali-kali. Tapi setiap kali salah satu mau jatuh, yang satunya narik. Nggak selalu cantik, tapi selalu bareng.",
+      "photo": "IMG_3537.JPG"
+    },
+    {
+      "date": "2025-09-02",
+      "icon": "🕯️",
+      "title": "Satu tahun",
+      "body": "Setahun. Kita nggak ngerayain besar-besaran. Kita cuma sadar: masih di sini, masih milih satu sama lain. Buat aku itu perayaan paling mewah.",
+      "photo": null
+    },
+    {
+      "date": "2026-09-01",
+      "icon": "🎓",
+      "title": "Wisuda",
+      "body": "Toga, medali, topi yang dilempar. Semua yang kamu lewatin buat sampai ke panggung itu — aku lihat semuanya dari dekat. Bangga itu kecil banget buat jelasin perasaannya.",
+      "photo": "WSD PHOTO 4.jpeg",
+      "pin": true
+    },
+    {
+      "date": "2026-09-02",
+      "icon": "🤍",
+      "title": "Dua tahun",
+      "body": "Dua tahun sejak aku memutuskan kamu milikku. Kita masih belum kaya, masih capek, masih berjuang. Tapi kita masih tumbuh. Dan halaman ini aku bikin biar kamu tahu: aku nggak lagi bertahan — aku milih, tiap hari, terus-terusan.",
+      "photo": "WSD PHOTO 5.jpeg",
+      "pin": true,
+      "anchor": true
+    }
+  ]
+}

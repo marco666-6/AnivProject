@@ -1,0 +1,156 @@
+{
+  "_comment": "Choose-your-own-adventure. Each node has text + choices pointing at another node id. 'end': true finishes the run.",
+  "start": "wa",
+  "nodes": {
+    "wa": {
+      "title": "21 Agustus 2024, 21:14",
+      "text": "HP kamu nyala. Satu chat masuk dari cewek di kelas sebelah:\n\n\"Kak, punya panduan dosen yang kemarin nggak? Aku ketinggalan jadwal sama literaturnya.\"\n\nJantung kamu nggak bereaksi apa-apa. Belum.",
+      "choices": [
+        { "t": "Bales cepat, sok santai", "to": "santai" },
+        { "t": "Diemin 20 menit biar nggak keliatan niat", "to": "gengsi" },
+        { "t": "Kirim file-nya aja, tanpa basa-basi", "to": "file" }
+      ]
+    },
+    "santai": {
+      "title": "Sok santai",
+      "text": "Kamu ngetik, hapus, ngetik lagi. Empat kali. Akhirnya kirim: \"Ada kok. Bentar aku cariin ya 😄\"\n\nEmoji-nya kamu sesalin selama tiga menit.",
+      "choices": [
+        { "t": "Lanjut ngobrol soal kelas", "to": "kelas" },
+        { "t": "Beraniin nanya balik soal dia", "to": "nanya" }
+      ]
+    },
+    "gengsi": {
+      "title": "Gengsi tingkat dewa",
+      "text": "Kamu tahan 20 menit. Kamu buka chat-nya lima kali dalam 20 menit itu. Read receipt kamu matiin buru-buru.\n\nAkhirnya kamu bales. Dia bales dalam 4 detik. Siapa yang gengsi sekarang.",
+      "choices": [
+        { "t": "Lanjut ngobrol soal kelas", "to": "kelas" },
+        { "t": "Beraniin nanya balik soal dia", "to": "nanya" }
+      ]
+    },
+    "file": {
+      "title": "Efisien",
+      "text": "Kamu kirim file-nya. Titik. Nggak ada basa-basi.\n\nTerus dia bales: \"Makasih kak 🥺 kakak baik banget.\"\n\nKamu baca kata 'baik banget' itu sekitar sembilan kali.",
+      "choices": [
+        { "t": "Lanjut ngobrol soal kelas", "to": "kelas" },
+        { "t": "Beraniin nanya balik soal dia", "to": "nanya" }
+      ]
+    },
+    "kelas": {
+      "title": "Ngobrol soal kelas (katanya)",
+      "text": "Obrolan mulai dari jadwal. Pindah ke dosen. Pindah ke makanan kantin. Pindah ke lagu. Pindah ke jam 2 pagi.\n\nNggak ada satu pun dari itu yang soal kelas lagi.",
+      "choices": [
+        { "t": "Ajak ketemu", "to": "juni" },
+        { "t": "Terusin chat dulu, belum siap", "to": "juni" }
+      ]
+    },
+    "nanya": {
+      "title": "Beraniin",
+      "text": "\"Btw kamu anak angkatan berapa? Kayaknya pernah liat.\"\n\nPadahal kamu tahu persis angkatan berapa. Kamu juga tahu dia duduk di mana. Kamu cuma butuh alasan.",
+      "choices": [
+        { "t": "Ajak ketemu", "to": "juni" },
+        { "t": "Terusin chat dulu, belum siap", "to": "juni" }
+      ]
+    },
+    "juni": {
+      "title": "27 Juni — sebenarnya sebelum semuanya",
+      "text": "Kalian udah pernah jalan sebelum ini. Sore itu jam setengah enam, dua jari di depan kamera, ketawa. Malamnya jam tujuh lewat, dia di belakang motor, megang bunga, pakai helm yang kegedean.\n\nKamu nyetir pelan banget. Bukan karena jalanan.",
+      "choices": [
+        { "t": "Ngaku ke diri sendiri: aku suka dia", "to": "sept" },
+        { "t": "Tetap bilang 'ini temenan aja'", "to": "denial" }
+      ]
+    },
+    "denial": {
+      "title": "Denial",
+      "text": "\"Temenan aja kok.\"\n\nKamu bilang itu ke diri sendiri sambil nyimpen fotonya di folder terpisah. Folder yang namanya bukan 'temen'.\n\nDenial kamu bertahan sekitar sebelas hari.",
+      "choices": [
+        { "t": "Ya udah, ngaku", "to": "sept" }
+      ]
+    },
+    "sept": {
+      "title": "2 September 2024",
+      "text": "Sekarang bagian yang penting.\n\nKamu bisa nembak dia dengan cara normal: bunga, lagu, kalimat yang kamu latih. Atau kamu bisa melakukan hal yang sebenarnya kamu lakukan — nggak nembak sama sekali, cuma memutuskan di dalam kepala kamu sendiri bahwa dia tujuanmu, dia milikmu, dia pacarmu.",
+      "choices": [
+        { "t": "Nembak resmi, bunga, semuanya", "to": "resmi" },
+        { "t": "Nggak nembak. Cuma memutuskan.", "to": "indonesia" },
+        { "t": "Tunggu momen yang lebih sempurna", "to": "tunggu" }
+      ]
+    },
+    "resmi": {
+      "title": "Versi yang nggak pernah terjadi",
+      "text": "Di dunia lain, kamu beli bunga, latihan di depan cermin, bilang kalimatnya sambil gemetar.\n\nDia bilang iya.\n\nBagus. Tapi bukan itu yang terjadi. Yang terjadi lebih sunyi, dan justru lebih kamu.",
+      "choices": [
+        { "t": "Balik ke yang asli", "to": "indonesia" }
+      ]
+    },
+    "tunggu": {
+      "title": "Nunggu momen sempurna",
+      "text": "Kamu nunggu. Satu hari. Dua hari.\n\nTerus kamu sadar sesuatu: nggak akan ada momen yang lebih sempurna dari 'sekarang, sama dia'. Momen sempurna itu bukan ditunggu, itu ditunjuk.\n\nKamu nunjuk tanggal 2.",
+      "choices": [
+        { "t": "Tunjuk sekarang", "to": "indonesia" }
+      ]
+    },
+    "indonesia": {
+      "title": "Indonesiaku",
+      "text": "Kamu nggak ngomong apa-apa yang bisa dipotret. Kamu cuma manggil dia Indonesiamu.\n\nTanah. Rumah. Tempat pulang.\n\nWaktu itu kamu nggak ngerti kenapa kata itu yang keluar. Dua tahun kemudian kamu ngerti.",
+      "choices": [
+        { "t": "Lanjut ke kencan pertama", "to": "bioskop" }
+      ]
+    },
+    "bioskop": {
+      "title": "Dua minggu kemudian, bioskop",
+      "text": "Lampu mati. Film mulai. Kamu nggak inget filmnya apa — kamu inget tangan siapa yang kamu pegang.\n\nDi ujung film, kamu punya satu kesempatan buat foto.",
+      "choices": [
+        { "t": "Foto berdua", "to": "foto" },
+        { "t": "Lupa. Ngobrol terus sampai lupa.", "to": "lupa" }
+      ]
+    },
+    "foto": {
+      "title": "Versi yang punya bukti",
+      "text": "Kamu foto. Ada dokumentasi.\n\nTapi tahu nggak? Yang beneran terjadi lebih bagus. Kalian lupa total. Dan hari itu jadi satu-satunya hari yang nggak dititipin ke siapa-siapa.",
+      "choices": [
+        { "t": "Balik ke yang asli", "to": "lupa" }
+      ]
+    },
+    "lupa": {
+      "title": "Nol dokumentasi",
+      "text": "Kalian keluar bioskop masih ngomong. Naik motor masih ngomong. Sampai rumah baru sadar: nggak ada satu pun foto.\n\nDan itu tetap salah satu hari terbaik.",
+      "choices": [
+        { "t": "Lompat ke tahun yang berat", "to": "berat" }
+      ]
+    },
+    "berat": {
+      "title": "Tahun yang nggak ramah",
+      "text": "Duit seret. Badan sering nggak kuat. Kepala kalian berdua capek di waktu yang sama. Ada malam-malam yang nggak ada yang tahu harus ngomong apa.\n\nKamu punya pilihan yang sama yang kamu punya tiap hari.",
+      "choices": [
+        { "t": "Bertahan karena udah terlanjur", "to": "bertahan" },
+        { "t": "Milih dia, lagi, hari ini juga", "to": "milih" }
+      ]
+    },
+    "bertahan": {
+      "title": "Bertahan",
+      "text": "Bertahan itu pasif. Bertahan itu nunggu badai lewat sambil merem.\n\nKalian nggak gitu. Kalian narik satu sama lain. Kadang pelan, kadang telat, tapi selalu ada.\n\nItu bukan bertahan.",
+      "choices": [
+        { "t": "Itu milih", "to": "milih" }
+      ]
+    },
+    "milih": {
+      "title": "Milih",
+      "text": "Kamu milih dia. Bukan karena gampang. Justru karena nggak.\n\nDan dia milih kamu balik, di tahun yang sama beratnya.",
+      "choices": [
+        { "t": "Lanjut ke wisuda", "to": "wisuda" }
+      ]
+    },
+    "wisuda": {
+      "title": "Toga",
+      "text": "Dia berdiri di sana. Medali di dada, kacamata item, topi diangkat tinggi.\n\nKamu di bawah, tepuk tangan paling kenceng, nahan mata.\n\nKamu tahu persis berapa harga yang dia bayar buat berdiri di sana.",
+      "choices": [
+        { "t": "Lempar topinya", "to": "akhir" }
+      ]
+    },
+    "akhir": {
+      "title": "2 September 2026",
+      "text": "Dua tahun.\n\nMasih belum kaya. Masih capek. Masih berjuang.\n\nTapi masih tumbuh — dan masih milih.\n\nKamu bikin halaman ini buat dia. Tiap tahun kamu bakal tambahin lagi.\n\nSelamat dua tahun, Indonesiaku.",
+      "end": true
+    }
+  }
+}

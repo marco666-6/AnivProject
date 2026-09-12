@@ -1,0 +1,103 @@
+{
+  "_comment": "Drop new photos into images/ then add an entry here. 'file' = the exact filename. Run `npm run images` to regenerate web/thumb sizes.",
+  "photos": [
+    {
+      "file": "IMG-20240316-WA0006.jpg",
+      "date": "2024-03-16",
+      "title": "Sebelum kamu",
+      "caption": "Maret 2024. Cowok bermasker, nunggu kelas, belum tahu kalau enam bulan lagi hidupnya bakal punya nama.",
+      "tags": ["before"]
+    },
+    {
+      "file": "Screenshot 2024-04-29 154847.png",
+      "date": "2024-04-29",
+      "title": "Kotak-kotak kecil di layar",
+      "caption": "Video call rame-rame. Kamu di kotak pojok, dan aku sadar aku ngeliatin kotak itu lebih lama dari yang lain.",
+      "tags": ["call"]
+    },
+    {
+      "file": "WIN_20240624_10_01_35_Pro.jpg",
+      "date": "2024-06-24",
+      "title": "Dua jari, dua orang bodoh",
+      "caption": "Webcam jelek, cahaya jelek, senyum kamu nggak. Peace sign pertama dari sekian banyak.",
+      "tags": ["us"]
+    },
+    {
+      "file": "IMG_20240627_175729.jpg",
+      "date": "2024-06-27",
+      "title": "Sore yang kepanjangan",
+      "caption": "27 Juni, jam setengah enam sore. Kita jalan, kita ketawa, dan aku pura-pura belum jatuh.",
+      "tags": ["us", "favorite"]
+    },
+    {
+      "file": "IMG_20240627_191529.jpg",
+      "date": "2024-06-27",
+      "title": "Bunga dan helm",
+      "caption": "Malam yang sama, jam tujuh lewat. Kamu megang bunga, aku megang stang, dua-duanya bikin gugup.",
+      "tags": ["us", "favorite"]
+    },
+    {
+      "file": "WIN_20240820_07_08_55_Pro.jpg",
+      "date": "2024-08-20",
+      "title": "Sehari sebelum",
+      "caption": "20 Agustus. Besoknya kamu ngechat nanyain jadwal kuliah dan panduan dosen. Kamu nggak tahu itu awal segalanya. Aku juga nggak.",
+      "tags": ["us"]
+    },
+    {
+      "file": "IMG_3537.JPG",
+      "date": "2025-03-01",
+      "title": "Tahun pertama, masih di sini",
+      "caption": "2025. Tahun yang berat — duit, badan, kepala, semuanya. Tapi ini kita, masih ketawa di depan kamera.",
+      "tags": ["us"]
+    },
+    {
+      "file": "WSD PHOTO 6.jpeg",
+      "date": "2026-09-01",
+      "title": "Rapi sekali hari itu",
+      "caption": "Sebelum toga dipakai. Kamu duduk, aku berdiri di belakang, dan aku ngerasa paling beruntung sedunia.",
+      "tags": ["wisuda"]
+    },
+    {
+      "file": "WSD PHOTO 3.jpeg",
+      "date": "2026-09-01",
+      "title": "Sarjana, Bu",
+      "caption": "Kacamata item, topi diangkat. Semua yang kamu lewatin buat berdiri di sana — aku lihat semuanya.",
+      "tags": ["wisuda", "her"]
+    },
+    {
+      "file": "WSD PHOTO 4.jpeg",
+      "date": "2026-09-01",
+      "title": "Berdua, bertoga",
+      "caption": "Kita berhasil. Bukan 'kamu berhasil' atau 'aku berhasil'. Kita.",
+      "tags": ["wisuda", "favorite"]
+    },
+    {
+      "file": "WSD PHOTO 5.jpeg",
+      "date": "2026-09-01",
+      "title": "Gandengan, seperti biasa",
+      "caption": "Pose resmi, tangan tetap nyari tangan. Refleks yang nggak pernah hilang.",
+      "tags": ["wisuda", "favorite"]
+    },
+    {
+      "file": "WhatsApp Image 2026-09-12 at 10.04.38.jpeg",
+      "date": "2026-09-12",
+      "title": "Topi ini buat kamu",
+      "caption": "Medali di dada, topi disodorin ke depan. Ini punya kita berdua.",
+      "tags": ["wisuda"]
+    },
+    {
+      "file": "WhatsApp Image 2026-09-12 at 10.04.39.jpeg",
+      "date": "2026-09-12",
+      "title": "Lempar topinya",
+      "caption": "Satu detik sebelum topi terbang. Satu detik yang pengen aku ulang terus.",
+      "tags": ["wisuda", "her"]
+    },
+    {
+      "file": "WhatsApp Image 2026-09-12 at 10.04.40.jpeg",
+      "date": "2026-09-12",
+      "title": "Toa dan kemenangan",
+      "caption": "Kamu teriak ke dunia. Dunia dengerin. Aku paling kenceng tepuk tangannya.",
+      "tags": ["wisuda", "her"]
+    }
+  ]
+}

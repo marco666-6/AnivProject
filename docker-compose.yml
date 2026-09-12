@@ -1,0 +1,21 @@
+services:
+  aniv:
+    build: .
+    container_name: aniv
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      DB_PATH: /app/data/aniv.sqlite
+    volumes:
+      # Live-edit content, photos and the site without rebuilding the image.
+      - ./content:/app/content:ro
+      # rw so `docker compose run --rm aniv npm run images` can write _web/_thumb
+      - ./images:/app/images
+      - ./public:/app/public:ro
+      # The database survives container restarts.
+      - aniv-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  aniv-data:

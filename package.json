@@ -1,0 +1,25 @@
+{
+  "name": "aniv",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Aniv — a personal, reusable anniversary web app for Marco & Aby. Rebuilt never, extended yearly.",
+  "type": "module",
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "seed": "node server/seed.js --force",
+    "images": "node scripts/build-images.mjs",
+    "smoke": "node scripts/smoke-test.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "express": "^4.21.1"
+  },
+  "optionalDependencies": {
+    "sharp": "^0.33.5"
+  }
+}

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff7f2">
+<title>Aniv — Marco &amp; Aby</title>
+<meta name="description" content="Dua tahun. Sebuah rumah kecil di internet, isinya cuma kita berdua.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤍</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/games.css">
+</head>
+<body>
+
+<!-- ambient layers -->
+<canvas id="fx-canvas" aria-hidden="true"></canvas>
+<div id="fx-grain" aria-hidden="true"></div>
+
+<!-- ░░ intro curtain ░░ -->
+<div id="curtain" class="curtain">
+  <div class="curtain__inner">
+    <div class="curtain__heart">🤍</div>
+    <p class="curtain__kicker">untuk</p>
+    <h1 class="curtain__name" data-bind="her.short">Ayu</h1>
+    <p class="curtain__sub" data-bind="site.tagline"></p>
+    <button class="btn btn--ghost curtain__btn" id="curtain-open">buka</button>
+    <p class="curtain__hint">pakai headphone kalau bisa 🎧</p>
+  </div>
+</div>
+
+<!-- ░░ nav ░░ -->
+<header class="topbar" id="topbar">
+  <a class="topbar__brand" href="#top">
+    <span class="topbar__mark">M<span>&amp;</span>A</span>
+  </a>
+  <nav class="topbar__nav" aria-label="Bagian">
+    <a href="#timeline">Cerita</a>
+    <a href="#gallery">Foto</a>
+    <a href="#arcade" class="is-accent">Arcade</a>
+    <a href="#reasons">Alasan</a>
+    <a href="#letter">Surat</a>
+  </nav>
+  <button class="topbar__music" id="music-toggle" aria-pressed="false" title="Musik">
+    <span class="topbar__eq"><i></i><i></i><i></i></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero" id="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__wrap">
+      <p class="hero__kicker" data-bind="hero.kicker"></p>
+
+      <h1 class="hero__title">
+        <span class="hero__line">Marco</span>
+        <span class="hero__amp">&amp;</span>
+        <span class="hero__line hero__line--her">Aby</span>
+      </h1>
+
+      <div class="counter" id="counter">
+        <div class="counter__big">
+          <span class="counter__num" id="days">—</span>
+          <span class="counter__unit">hari bersama</span>
+        </div>
+        <div class="counter__row" id="counter-row"></div>
+        <p class="counter__since">sejak <b>2 September 2024</b> — hari aku menyebutmu Indonesiaku</p>
+      </div>
+
+      <p class="hero__rotate" id="hero-rotate"></p>
+
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#arcade">Main dulu, yuk →</a>
+        <a class="btn btn--quiet" href="#letter">Baca suratnya</a>
+      </div>
+    </div>
+    <a class="hero__scroll" href="#timeline" aria-label="Scroll"><span></span></a>
+  </section>
+
+  <!-- ░░ TIMELINE ░░ -->
+  <section class="section section--tint" id="timeline">
+    <div class="section__head">
+      <p class="section__eyebrow">01 — kronologi</p>
+      <h2 class="section__title" data-bind="timelineTitle">Jalan cerita kita</h2>
+      <p class="section__lede">Dari chat soal jadwal kuliah, sampai topi toga yang dilempar ke udara.</p>
+    </div>
+    <ol class="timeline" id="timeline-list"></ol>
+  </section>
+
+  <!-- ░░ GALLERY ░░ -->
+  <section class="section" id="gallery">
+    <div class="section__head">
+      <p class="section__eyebrow">02 — arsip</p>
+      <h2 class="section__title" data-bind="galleryTitle">Kita, dalam potongan-potongan</h2>
+      <p class="section__lede">Ketuk fotonya. Tahan buat kasih hati.</p>
+    </div>
+    <div class="gallery" id="gallery-grid"></div>
+  </section>
+
+  <!-- ░░ ARCADE ░░ -->
+  <section class="section section--dark" id="arcade">
+    <div class="section__head">
+      <p class="section__eyebrow">03 — main-main</p>
+      <h2 class="section__title" data-bind="arcadeTitle">Arcade Bucuk</h2>
+      <p class="section__lede">Sembilan permainan. Tiap satu yang kamu selesaikan, ada pesan yang kebuka.</p>
+      <div class="arcade__progress">
+        <div class="arcade__bar"><span id="arcade-bar-fill"></span></div>
+        <p id="arcade-progress-text">0 dari 9 kebuka</p>
+      </div>
+    </div>
+    <div class="arcade" id="arcade-grid"></div>
+    <div class="vault" id="vault">
+      <h3 class="vault__title">Pesan yang udah kebuka</h3>
+      <div class="vault__list" id="vault-list"><p class="vault__empty">Belum ada. Main satu game dulu ya 🤍</p></div>
+    </div>
+  </section>
+
+  <!-- ░░ REASONS ░░ -->
+  <section class="section section--tint" id="reasons">
+    <div class="section__head">
+      <p class="section__eyebrow">04 — daftar panjang</p>
+      <h2 class="section__title" data-bind="reasonsTitle">Alasan aku sayang kamu</h2>
+      <p class="section__lede">Tarik satu kartu. Atau lihat semuanya sekaligus.</p>
+    </div>
+
+    <div class="deck" id="deck">
+      <div class="deck__stage" id="deck-stage"></div>
+      <div class="deck__controls">
+        <button class="btn btn--primary" id="deck-draw">Tarik kartu</button>
+        <button class="btn btn--quiet" id="deck-all">Lihat semua</button>
+      </div>
+      <p class="deck__count" id="deck-count"></p>
+    </div>
+
+    <ul class="reasons-list" id="reasons-list" hidden></ul>
+  </section>
+
+  <!-- ░░ LETTER ░░ -->
+  <section class="section" id="letter">
+    <div class="section__head">
+      <p class="section__eyebrow">05 — yang paling penting</p>
+      <h2 class="section__title" data-bind="letterSectionTitle">Surat, dari aku</h2>
+    </div>
+
+    <div class="envelope" id="envelope">
+      <button class="envelope__seal" id="envelope-open">
+        <span class="envelope__wax">M</span>
+        <span class="envelope__label">buka suratnya</span>
+      </button>
+    </div>
+
+    <article class="letter" id="letter-body" hidden></article>
+
+    <div class="reply" id="reply">
+      <h3 class="reply__title">Mau bales?</h3>
+      <p class="reply__sub">Tulis apa aja. Cuma aku yang baca.</p>
+      <form class="reply__form" id="reply-form">
+        <textarea id="reply-input" rows="3" maxlength="2000" placeholder="tulis di sini…"></textarea>
+        <button class="btn btn--primary" type="submit">Kirim</button>
+      </form>
+      <ul class="reply__list" id="reply-list"></ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__heart" id="footer-heart">🤍</div>
+    <p class="footer__line">Dibuat tangan sendiri, buat <b>Ayu Sihombing</b>.</p>
+    <p class="footer__sub">Aby · Bebelac Gold · Bucuk · Indonesiaku</p>
+    <p class="footer__meta" id="footer-meta"></p>
+  </footer>
+
+</main>
+
+<!-- ░░ overlays ░░ -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" id="lightbox-close" aria-label="Tutup">✕</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Sebelumnya">‹</button>
+  <button class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Berikutnya">›</button>
+  <figure class="lightbox__figure">
+    <img id="lightbox-img" alt="">
+    <figcaption id="lightbox-cap"></figcaption>
+  </figure>
+</div>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal__scrim" id="modal-scrim"></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <header class="modal__head">
+      <h3 class="modal__title" id="modal-title"></h3>
+      <button class="modal__close" id="modal-close" aria-label="Tutup">✕</button>
+    </header>
+    <div class="modal__body" id="modal-body"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<div class="reveal" id="reveal" hidden>
+  <div class="reveal__card">
+    <div class="reveal__glow"></div>
+    <p class="reveal__eyebrow">kebuka</p>
+    <p class="reveal__text" id="reveal-text"></p>
+    <button class="btn btn--primary" id="reveal-close">🤍</button>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

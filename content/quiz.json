@@ -2,74 +2,167 @@
   "_comment": "Add questions every year. 'a' is the index of the correct option. 'note' shows after answering.",
   "questions": [
     {
-      "q": "Chat pertama Aby ke Marco itu tentang apa?",
-      "options": ["Nanyain kabar", "Nanyain kampus, literatur & jadwal", "Ngajak nonton", "Salah kirim"],
+      "q": "Chat pertama Aby ke Marr itu tentang apa?",
+      "options": [
+        "Nanyain kabar",
+        "Nanyain kampus, literatur & jadwal",
+        "Ngajak nonton",
+        "Salah kirim"
+      ],
       "a": 1,
       "note": "21 Agustus 2024. Katanya kangen panduan dosen. Paling nggak romantis, paling penting."
     },
     {
-      "q": "Tanggal berapa Marco mulai nyebut Aby miliknya?",
-      "options": ["21 Agustus 2024", "2 September 2024", "16 September 2024", "27 Juni 2024"],
+      "q": "Tanggal berapa Marr mulai nyebut Aby miliknya?",
+      "options": [
+        "21 Agustus 2024",
+        "2 September 2024",
+        "16 September 2024",
+        "27 Juni 2024"
+      ],
       "a": 1,
       "note": "2 September 2024. Tanpa nembak, tanpa penonton. Cuma keputusan."
     },
     {
-      "q": "Marco manggil Aby apa di hari itu?",
-      "options": ["Bidadariku", "Indonesiaku", "Duniaku", "Rumahku"],
+      "q": "Marr manggil Aby apa di hari itu?",
+      "options": [
+        "Bidadarinya",
+        "Indonesianya",
+        "Dunianya",
+        "Rumahnya"
+      ],
       "a": 1,
-      "note": "Indonesiaku. Tanah, rumah, tempat pulang."
+      "note": "Indonesianya Marr. Tanah, rumah, tempat pulang."
     },
     {
       "q": "Kencan resmi pertama kita ngapain?",
-      "options": ["Makan di warung", "Nonton film", "Jalan ke pantai", "Belajar bareng"],
+      "options": [
+        "Makan di warung",
+        "Nonton film",
+        "Jalan ke pantai",
+        "Belajar bareng"
+      ],
       "a": 1,
       "note": "Nonton, sekitar dua minggu setelah 2 September. Dan kita LUPA FOTO."
     },
     {
       "q": "Kenapa nggak ada foto kencan pertama?",
-      "options": ["HP-nya lowbat", "Kita lupa total", "Fotonya kehapus", "Emang sengaja"],
+      "options": [
+        "HP-nya lowbat",
+        "Kita lupa total",
+        "Fotonya kehapus",
+        "Emang sengaja"
+      ],
       "a": 1,
       "note": "Lupa. Dua orang dewasa, satu bioskop, nol dokumentasi."
     },
     {
-      "q": "Mana yang BUKAN panggilan sayang buat Ayu?",
-      "options": ["Aby", "Bebelac Gold", "Bucuk", "Bubu Dudu"],
+      "q": "Mana yang BUKAN panggilan Marr buat Aby?",
+      "options": [
+        "Aby",
+        "Bebelac Gold",
+        "Bucuk",
+        "Bubu Dudu"
+      ],
       "a": 3,
       "note": "Aby (Ayu Baby), Bebelac Gold, dan Bucuk. Tiga, bukan empat."
     },
     {
       "q": "'Aby' itu singkatan dari apa?",
-      "options": ["Ayu Baby", "A Beautiful You", "Ayu Bucuk Yeay", "Nggak ada artinya"],
+      "options": [
+        "Ayu Baby",
+        "A Beautiful You",
+        "Ayu Bucuk Yeay",
+        "Nggak ada artinya"
+      ],
       "a": 0,
-      "note": "Ayu Baby. Simple, dan cuma aku yang pakai."
+      "note": "Ayu Baby. Simpel, dan cuma Marr yang pakai."
     },
     {
       "q": "Di foto 27 Juni 2024 yang malam, Aby lagi megang apa?",
-      "options": ["Helm", "Bunga", "Es krim", "HP"],
+      "options": [
+        "Helm",
+        "Bunga",
+        "Es krim",
+        "HP"
+      ],
       "a": 1,
-      "note": "Bunga. Di atas motor. Malam itu aku gemetar dan pura-pura enggak."
+      "note": "Bunga. Di atas motor. Malam itu Marr gemetar dan pura-pura enggak."
     },
     {
-      "q": "Tahun berapa kita mulai pacaran?",
-      "options": ["2023", "2024", "2025", "2026"],
+      "q": "Bulan dan tahun berapa Aby wisuda?",
+      "options": [
+        "September 2026",
+        "November 2025",
+        "Juni 2025",
+        "Januari 2026"
+      ],
       "a": 1,
-      "note": "2024. Dan sekarang udah dua tahun."
+      "note": "November 2025. Toga, medali, dan topi yang dilempar ke udara."
     },
     {
       "q": "Apa yang kita lewatin bareng di tahun pertama?",
-      "options": ["Semuanya mulus", "Susah duit, badan, kepala, dan hubungan", "Cuma LDR", "Nggak ada masalah"],
+      "options": [
+        "Semuanya mulus",
+        "Susah duit, badan, kepala, dan hubungan",
+        "Cuma LDR",
+        "Nggak ada masalah"
+      ],
       "a": 1,
       "note": "Berat semua. Tapi nggak ada yang ditinggal sendirian."
     },
     {
       "q": "Pas wisuda, apa yang Aby lempar ke udara?",
-      "options": ["Bunga", "Topi toga", "Ijazah", "Medali"],
+      "options": [
+        "Bunga",
+        "Topi toga",
+        "Ijazah",
+        "Medali"
+      ],
       "a": 1,
-      "note": "Topi. Dan aku tepuk tangan paling kenceng di bawah."
+      "note": "Topi. Dan Marr tepuk tangan paling kenceng di bawah."
     },
     {
-      "q": "Menurut Marco, kita sekarang lagi apa sama hubungan ini?",
-      "options": ["Bertahan", "Milih", "Nunggu", "Nyoba"],
+      "q": "Nomor meja kita pas makan ramen tanggal 12 September 2026?",
+      "options": [
+        "3-B",
+        "8-A",
+        "12-C",
+        "Nggak ada nomornya"
+      ],
+      "a": 1,
+      "note": "Meja 8-A. Marr nggak akan lupa nomor mejanya."
+    },
+    {
+      "q": "Minumnya Aby waktu ramenan itu apa?",
+      "options": [
+        "Lemon tea",
+        "Matcha",
+        "Air putih",
+        "Es teh manis"
+      ],
+      "a": 1,
+      "note": "Matcha buat Aby, lemon tea buat Marr. Seperti biasa."
+    },
+    {
+      "q": "Habis ramen tanggal 12 September kemarin, kita ke mana?",
+      "options": [
+        "Pulang",
+        "Bioskop",
+        "Mall",
+        "Kafe"
+      ],
+      "a": 1,
+      "note": "Bioskop. Nonton lagi, persis kayak kencan pertama — tapi kali ini Marr nggak lupa foto."
+    },
+    {
+      "q": "Menurut Marr, kita sekarang lagi apa sama hubungan ini?",
+      "options": [
+        "Bertahan",
+        "Milih",
+        "Nunggu",
+        "Nyoba"
+      ],
       "a": 1,
       "note": "Milih. Tiap hari. Itu bedanya."
     }

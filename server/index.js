@@ -23,9 +23,22 @@ app.use('/images', express.static(path.join(ROOT, 'images'), {
   setHeaders: (res) => res.setHeader('Cache-Control', 'public, max-age=604800'),
 }));
 
-app.use(express.static(path.join(ROOT, 'public'), { extensions: ['html'] }));
+// The page, its CSS and its JS must always revalidate — otherwise an edit to
+// public/ or content/ looks like it didn't happen until the browser cache expires.
+app.use(express.static(path.join(ROOT, 'public'), {
+  extensions: ['html'],
+  etag: true,
+  setHeaders: (res, filePath) => {
+    if (/\.(html|css|js|json)$/i.test(filePath)) {
+      res.setHeader('Cache-Control', 'no-cache, must-revalidate');
+    }
+  },
+}));
 
-app.get('*', (_req, res) => res.sendFile(path.join(ROOT, 'public', 'index.html')));
+app.get('*', (_req, res) => {
+  res.setHeader('Cache-Control', 'no-cache, must-revalidate');
+  res.sendFile(path.join(ROOT, 'public', 'index.html'));
+});
 
 app.use((err, _req, res, _next) => {
   console.error('[error]', err);

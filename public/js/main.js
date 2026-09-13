@@ -10,6 +10,7 @@ import { renderTimeline } from './timeline.js';
 import { renderGallery, initLightbox, open as openPhoto } from './gallery.js';
 import { initReasons } from './reasons.js';
 import { initLetter, initReply } from './letter.js';
+import { renderKids } from './kids.js';
 import { initArcade, showReveal } from './arcade.js';
 import { initEasterEggs } from './easter-eggs.js';
 
@@ -120,6 +121,7 @@ function initCurtain(music, config) {
   initLightbox();
   renderTimeline(data.memories, photosByFile, openPhoto);
   initReasons(data.reasons);
+  renderKids(data.future || config.future);
   initLetter(data.letter);
   initArcade(data);
   initEasterEggs({ notes: data.notes || [], showReveal });

@@ -6,7 +6,7 @@ export default {
   name: 'Lari Bareng',
   icon: '🏃',
   tint: 'rgba(224,82,109,.38)',
-  desc: 'Lompatin rintangannya, kumpulin hatinya. Makin lama makin ngebut.',
+  desc: 'Lompatin rintangannya, kumpulin hatinya. Makin lama makin ngebut, Buk.',
   scoring: 'high',
   scoreLabel: (v) => `rekor ${v} m`,
 

@@ -55,6 +55,7 @@ export const api = {
   quiz:      () => get('/games/quiz'),
   adventure: () => get('/games/adventure'),
   wordle:    () => get('/games/wordle'),
+  punch:     () => get('/games/punch'),
   wordleCheck: (token, guess) => post('/games/wordle/check', { token, guess }),
 
   /** Save a score. Local best updates immediately; server sync is best-effort. */

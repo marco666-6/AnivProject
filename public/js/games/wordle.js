@@ -8,7 +8,7 @@ export default {
   name: 'Tebak Kata',
   icon: '🔤',
   tint: 'rgba(127,183,164,.32)',
-  desc: 'Satu kata per hari, semuanya nyambung ke kita. Enam kesempatan.',
+  desc: 'Satu kata per hari, semuanya nyambung ke kita. Enam kesempatan buat Aby.',
   scoring: 'low',
   scoreLabel: (v) => `ketebak di percobaan ke-${v}`,
 
@@ -97,7 +97,7 @@ export default {
         done = true;
         setTimeout(() => {
           msg.textContent = 'kehabisan percobaan 😔';
-          ctx.finish({ score: ROWS + 1, silent: false, message: 'Nggak ketebak hari ini — nggak apa-apa.\n\nBesok katanya ganti. Balik lagi ya. 🤍' });
+          ctx.finish({ score: ROWS + 1, silent: false, message: 'Nggak ketebak hari ini — nggak apa-apa, Buk.\n\nBesok katanya ganti. Balik lagi ya. 🤍' });
         }, LEN * 130 + 250);
         return;
       }

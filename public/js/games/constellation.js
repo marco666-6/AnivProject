@@ -4,12 +4,12 @@ import { pick } from '../util.js';
 const SHAPES = [
   {
     name: 'Hati',
-    line: 'Bentuk pertama yang aku gambar tiap kali mikirin kamu.',
+    line: 'Bentuk pertama yang Marr gambar tiap kali mikirin Aby.',
     pts: [[.50,.22],[.36,.12],[.22,.22],[.22,.40],[.50,.72],[.78,.40],[.78,.22],[.64,.12],[.50,.22]],
   },
   {
     name: 'Bintang',
-    line: 'Kamu bukan bintang yang jauh. Kamu yang paling deket.',
+    line: 'Aby bukan bintang yang jauh. Aby yang paling deket.',
     pts: [[.50,.10],[.61,.38],[.90,.38],[.67,.56],[.76,.85],[.50,.67],[.24,.85],[.33,.56],[.10,.38],[.39,.38],[.50,.10]],
   },
   {
@@ -41,7 +41,7 @@ export default {
     const cv = E('canvas', { class: 'cv' });
     wrap.append(cv);
     const label = E('p', { class: 'cn-label', text: `sambungin ${shape.pts.length} titik, urut dari yang menyala` });
-    root.append(E('p', { class: 'g-intro', text: 'Ketuk bintang yang berkedip. Satu per satu.' }), wrap, label);
+    root.append(E('p', { class: 'g-intro', text: 'Ketuk bintang yang berkedip ya Buk. Satu per satu.' }), wrap, label);
 
     const c = cv.getContext('2d');
     let W = 0, H = 0;

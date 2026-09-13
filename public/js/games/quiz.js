@@ -7,7 +7,7 @@ export default {
   name: 'Kuis Kita',
   icon: '💌',
   tint: 'rgba(217,164,65,.34)',
-  desc: 'Seberapa inget kamu sama cerita kita? Jujur-jujuran.',
+  desc: 'Seberapa inget Aby sama cerita kita? Jujur-jujuran.',
   scoring: 'high',
   scoreLabel: (v) => `benar terbanyak: ${v}`,
 
@@ -78,10 +78,10 @@ export default {
       bar.style.width = '100%';
       const pct = Math.round((score / qs.length) * 100);
       const verdict =
-        pct === 100 ? 'Sempurna. Kamu nyimpen semuanya, sama kayak aku.' :
-        pct >= 75 ? 'Hampir semua bener. Kepala kamu isinya kita juga ternyata.' :
-        pct >= 50 ? 'Lumayan! Sisanya biar aku yang inget buat kamu.' :
-                    'Nggak apa-apa. Yang penting orangnya masih di sini.';
+        pct === 100 ? 'Sempurna. Aby nyimpen semuanya, sama kayak Marr.' :
+        pct >= 75 ? 'Hampir semua bener. Kepala Aby isinya kita juga ternyata.' :
+        pct >= 50 ? 'Lumayan! Sisanya biar Marr yang inget buat Aby.' :
+                    'Nggak apa-apa, Buk. Yang penting orangnya masih di sini.';
       stage.replaceChildren(
         E('div', { class: 'qz-done' },
           E('p', { class: 'qz-score', text: `${score}/${qs.length}` }),

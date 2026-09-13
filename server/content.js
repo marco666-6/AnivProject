@@ -22,6 +22,7 @@ export const loadContent = () => ({
   letters:   read('letters',   { main: {}, notes: [], unlockables: {} }),
   adventure: read('adventure', { start: null, nodes: {} }),
   wordle:    read('wordle',    { words: [] }),
+  punch:     read('punch',     { targets: [], finale: null }),
 });
 
 /** Image manifest produced by `npm run images`. Maps original filename → web/thumb slug. */

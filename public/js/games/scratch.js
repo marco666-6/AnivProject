@@ -6,16 +6,16 @@ export default {
   name: 'Gosok Pesan',
   icon: '🪙',
   tint: 'rgba(106,53,80,.34)',
-  desc: 'Gosok pakai jari. Di bawahnya ada pesan yang aku tulis buat kamu.',
+  desc: 'Gosok pakai jari. Di bawahnya ada pesan yang Marr tulis buat Aby.',
   scoring: 'high',
   scoreLabel: (v) => `${v} pesan digosok`,
 
   async mount(ctx) {
     const { root, data, el: E } = ctx;
-    const notes = shuffle(data.notes?.length ? data.notes : ['Aku sayang kamu 🤍']);
+    const notes = shuffle(data.notes?.length ? data.notes : ['Marr sayang Aby 🤍']);
     let i = 0, opened = 0;
 
-    const label = E('p', { class: 'g-intro', text: 'Gosok dengan jari atau mouse. Kalau udah kebaca, tarik kartu berikutnya.' });
+    const label = E('p', { class: 'g-intro', text: 'Gosok pakai jari, Buk. Kalau udah kebaca, tarik kartu berikutnya.' });
     const holder = E('div', { class: 'sc-holder' });
     const counter = E('p', { class: 'sc-count', text: '' });
     const nextBtn = E('button', { class: 'btn btn--primary btn--sm', text: 'Kartu berikutnya', onclick: () => card() });

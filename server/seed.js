@@ -19,6 +19,7 @@ export function seed({ quiet = false } = {}) {
     title: e.title || '',
     body: e.body || '',
     photo: e.photo || null,
+    photo_caption: e.photoCaption || null,
     pin: e.pin ? 1 : 0,
     anchor: e.anchor ? 1 : 0,
     approx: e.approx ? 1 : 0,

@@ -16,6 +16,7 @@ r.get('/bootstrap', (req, res) => {
     photos: repo.getPhotos(),
     reasons: repo.getReasons(),
     letter: c.letters.main,
+    future: c.config.future || null,
     notes: c.letters.notes,
     unlockables: c.letters.unlockables,
     unlocks: repo.getUnlocks().map((u) => u.key),
@@ -37,6 +38,7 @@ r.get('/notes',     (_q, s) => ok(s, content().letters.notes));
 /* ---------- game data ---------- */
 r.get('/games/quiz',      (_q, s) => ok(s, content().quiz.questions));
 r.get('/games/adventure', (_q, s) => ok(s, content().adventure));
+r.get('/games/punch',     (_q, s) => ok(s, content().punch));
 r.get('/games/wordle',    (_q, s) => {
   // Pick a word from the day so it's stable for 24h but changes daily.
   const words = content().wordle.words;

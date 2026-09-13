@@ -6,7 +6,7 @@ export default {
   name: 'Tebak Pasangan',
   icon: '🃏',
   tint: 'rgba(224,82,109,.34)',
-  desc: 'Balik kartunya, temuin foto yang sama. Pakai foto kita sendiri.',
+  desc: 'Balik kartunya, temuin foto yang sama. Semua foto kita sendiri.',
   scoring: 'low',
   scoreLabel: (v) => `rekor ${v} langkah`,
 

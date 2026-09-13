@@ -1,103 +1,131 @@
 {
-  "_comment": "Drop new photos into images/ then add an entry here. 'file' = the exact filename. Run `npm run images` to regenerate web/thumb sizes.",
+  "_comment": "Order here = order on the page. Dates are optional: use \"2024-06-27\", or \"2025-11\" when only the month is known, or null when you don't know — nothing gets invented.",
   "photos": [
     {
       "file": "IMG-20240316-WA0006.jpg",
       "date": "2024-03-16",
-      "title": "Sebelum kamu",
-      "caption": "Maret 2024. Cowok bermasker, nunggu kelas, belum tahu kalau enam bulan lagi hidupnya bakal punya nama.",
+      "title": "Sebelum Aby",
+      "caption": "Marr bermasker, nunggu kelas, muka datar. Belum tahu kalau beberapa bulan lagi hidupnya bakal punya nama, dan namanya Ayu.",
       "tags": ["before"]
     },
     {
       "file": "Screenshot 2024-04-29 154847.png",
       "date": "2024-04-29",
-      "title": "Kotak-kotak kecil di layar",
-      "caption": "Video call rame-rame. Kamu di kotak pojok, dan aku sadar aku ngeliatin kotak itu lebih lama dari yang lain.",
+      "title": "Kotak kecil di pojok layar",
+      "caption": "Video call rame-rame. Aby ada di kotak pojok, dan Marr sadar dia ngeliatin kotak itu lebih lama dari yang lain.",
       "tags": ["call"]
     },
     {
       "file": "WIN_20240624_10_01_35_Pro.jpg",
       "date": "2024-06-24",
       "title": "Dua jari, dua orang bodoh",
-      "caption": "Webcam jelek, cahaya jelek, senyum kamu nggak. Peace sign pertama dari sekian banyak.",
+      "caption": "Webcam jelek, cahaya jelek, senyum Bebelac nggak. Peace sign pertama dari sekian banyak.",
       "tags": ["us"]
     },
     {
       "file": "IMG_20240627_175729.jpg",
       "date": "2024-06-27",
       "title": "Sore yang kepanjangan",
-      "caption": "27 Juni, jam setengah enam sore. Kita jalan, kita ketawa, dan aku pura-pura belum jatuh.",
+      "caption": "Setengah enam sore. Jalan berdua, ketawa berdua, dan Marr pura-pura belum jatuh.",
       "tags": ["us", "favorite"]
     },
     {
       "file": "IMG_20240627_191529.jpg",
       "date": "2024-06-27",
       "title": "Bunga dan helm",
-      "caption": "Malam yang sama, jam tujuh lewat. Kamu megang bunga, aku megang stang, dua-duanya bikin gugup.",
+      "caption": "Malam yang sama, jam tujuh lewat. Aby megang bunga, Marr megang stang. Dua-duanya bikin gugup.",
       "tags": ["us", "favorite"]
     },
     {
       "file": "WIN_20240820_07_08_55_Pro.jpg",
       "date": "2024-08-20",
-      "title": "Sehari sebelum",
-      "caption": "20 Agustus. Besoknya kamu ngechat nanyain jadwal kuliah dan panduan dosen. Kamu nggak tahu itu awal segalanya. Aku juga nggak.",
+      "title": "Sehari sebelum semuanya",
+      "caption": "20 Agustus. Besoknya Aby ngechat nanyain jadwal kuliah sama panduan dosen. Nggak ada yang nyangka itu pintu masuknya.",
       "tags": ["us"]
     },
     {
       "file": "IMG_3537.JPG",
-      "date": "2025-03-01",
-      "title": "Tahun pertama, masih di sini",
-      "caption": "2025. Tahun yang berat — duit, badan, kepala, semuanya. Tapi ini kita, masih ketawa di depan kamera.",
+      "date": null,
+      "title": "Studio, entah kapan",
+      "caption": "Marr lupa ini kapan persisnya. Yang Marr inget cuma: Bebelac duduk di depan, Marr berdiri di belakang, dan itu urutan yang selalu bener.",
       "tags": ["us"]
     },
     {
       "file": "WSD PHOTO 6.jpeg",
-      "date": "2026-09-01",
+      "date": "2025-11",
       "title": "Rapi sekali hari itu",
-      "caption": "Sebelum toga dipakai. Kamu duduk, aku berdiri di belakang, dan aku ngerasa paling beruntung sedunia.",
+      "caption": "Sebelum toga dipakai. Aby duduk, Marr berdiri di belakang, dan Marr ngerasa paling beruntung sedunia.",
       "tags": ["wisuda"]
     },
     {
       "file": "WSD PHOTO 3.jpeg",
-      "date": "2026-09-01",
+      "date": "2025-11",
       "title": "Sarjana, Bu",
-      "caption": "Kacamata item, topi diangkat. Semua yang kamu lewatin buat berdiri di sana — aku lihat semuanya.",
+      "caption": "Kacamata item, topi diangkat. Semua yang Aby lewatin buat berdiri di sana — Marr lihat semuanya dari jarak paling dekat.",
       "tags": ["wisuda", "her"]
     },
     {
       "file": "WSD PHOTO 4.jpeg",
-      "date": "2026-09-01",
+      "date": "2025-11",
       "title": "Berdua, bertoga",
-      "caption": "Kita berhasil. Bukan 'kamu berhasil' atau 'aku berhasil'. Kita.",
+      "caption": "Bukan 'Aby berhasil'. Bukan 'Marr berhasil'. Kita.",
       "tags": ["wisuda", "favorite"]
     },
     {
       "file": "WSD PHOTO 5.jpeg",
-      "date": "2026-09-01",
+      "date": "2025-11",
       "title": "Gandengan, seperti biasa",
-      "caption": "Pose resmi, tangan tetap nyari tangan. Refleks yang nggak pernah hilang.",
+      "caption": "Pose resmi, tangan tetap nyari tangan. Refleks yang nggak pernah hilang dari Bebelac.",
       "tags": ["wisuda", "favorite"]
     },
     {
       "file": "WhatsApp Image 2026-09-12 at 10.04.38.jpeg",
-      "date": "2026-09-12",
-      "title": "Topi ini buat kamu",
-      "caption": "Medali di dada, topi disodorin ke depan. Ini punya kita berdua.",
+      "date": "2025-11",
+      "title": "Topi ini buat kita berdua",
+      "caption": "Medali di dada, topi disodorin ke depan. Marr nggak akan pernah ngaku ini punya dia sendiri.",
       "tags": ["wisuda"]
     },
     {
       "file": "WhatsApp Image 2026-09-12 at 10.04.39.jpeg",
-      "date": "2026-09-12",
+      "date": "2025-11",
       "title": "Lempar topinya",
-      "caption": "Satu detik sebelum topi terbang. Satu detik yang pengen aku ulang terus.",
+      "caption": "Satu detik sebelum topi terbang. Satu detik yang Marr pengen ulang terus-terusan.",
       "tags": ["wisuda", "her"]
     },
     {
       "file": "WhatsApp Image 2026-09-12 at 10.04.40.jpeg",
-      "date": "2026-09-12",
+      "date": "2025-11",
       "title": "Toa dan kemenangan",
-      "caption": "Kamu teriak ke dunia. Dunia dengerin. Aku paling kenceng tepuk tangannya.",
+      "caption": "Bucuk teriak ke dunia. Dunia dengerin. Marr paling kenceng tepuk tangannya.",
       "tags": ["wisuda", "her"]
+    },
+    {
+      "file": "2026-09-12-ramen-meja-8a.jpg",
+      "date": "2026-09-12",
+      "title": "Meja 8-A",
+      "caption": "Dua mangkok ramen, satu matcha, satu lemon tea. Aby monyong sambil ngangkat sumpit, Marr cuma bisa senyum ke kamera. Dua tahun, dan Bebelac masih bikin Marr gini.",
+      "tags": ["us", "favorite", "2026"]
+    },
+    {
+      "file": "2026-09-12-ramen-flatlay.jpg",
+      "date": "2026-09-12",
+      "title": "Sebelum diaduk",
+      "caption": "Foto makanan dulu, baru boleh makan. Peraturan Bucuk, bukan peraturan Marr. Tapi Marr nurut.",
+      "tags": ["2026"]
+    },
+    {
+      "file": "2026-09-12-nunggu-film.jpg",
+      "date": "2026-09-12",
+      "title": "Nunggu filmnya mulai",
+      "caption": "Aby ketawa sampai matanya ilang, Marr nyender. Nggak ngapa-ngapain, cuma nunggu. Dan itu udah cukup.",
+      "tags": ["us", "2026"]
+    },
+    {
+      "file": "2026-09-12-bioskop-lobi.jpg",
+      "date": "2026-09-12",
+      "title": "Nonton lagi — kali ini ada buktinya",
+      "caption": "Bioskop, dua tahun setelah bioskop pertama yang kita lupa foto. Kali ini Marr nggak lupa. Nggak akan lupa lagi.",
+      "tags": ["us", "favorite", "2026"]
     }
   ]
 }

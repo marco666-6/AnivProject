@@ -1,19 +1,85 @@
 {
-  "_comment": "Word-guess game. Words can be ANY length (4-8) — the board adapts. Add as many as you want; one is picked per day.",
+  "_comment": "Word-guess game. Words can be ANY length (4-8) — the board adapts. One is picked per day.",
   "words": [
-    { "w": "BUCUK",  "hint": "Panggilan kamu pas lagi gemesin banget.",        "reward": "Bucuk. Nggak ada di KBBI, ada di hati aku." },
-    { "w": "TOGA",   "hint": "Yang kamu pakai di hari paling bangga.",         "reward": "Toga itu berat. Kamu tetap berdiri tegak." },
-    { "w": "RUMAH",  "hint": "Arti 'Indonesiaku' sebenarnya.",                 "reward": "Kamu rumah. Bukan kiasan." },
-    { "w": "SAYANG", "hint": "Kata yang paling sering aku kirim ke kamu.",     "reward": "Diketik ribuan kali, masih nggak basi." },
-    { "w": "BUNGA",  "hint": "Yang kamu pegang di atas motor, 27 Juni 2024.",  "reward": "Bunganya layu. Perasaannya enggak." },
-    { "w": "PULANG", "hint": "Rasanya tiap aku ketemu kamu.",                  "reward": "Ketemu kamu itu rasanya pulang." },
-    { "w": "TETAP",  "hint": "Yang kita lakuin di tahun paling berat.",        "reward": "Kata kerja paling romantis yang aku tahu." },
-    { "w": "MILIK",  "hint": "Yang aku putusin tanggal 2 September 2024.",     "reward": "Milikku. Aku nggak nembak — aku mutusin." },
-    { "w": "JADWAL", "hint": "Alasan kamu ngechat aku pertama kali.",          "reward": "Pintu masuk paling nggak romantis sedunia." },
-    { "w": "KAMU",   "hint": "Jawaban dari semua pertanyaan.",                 "reward": "Kamu. Selalu kamu." },
-    { "w": "MOTOR",  "hint": "Tempat kamu duduk di belakang aku.",             "reward": "Pelan banget aku nyetir. Bukan karena jalanan." },
-    { "w": "BIOSKOP","hint": "Kencan pertama kita, tanpa satu pun foto.",      "reward": "Nol dokumentasi. Hari itu cuma punya kita." },
-    { "w": "TUJUAN", "hint": "Kamu buat aku, bukan pelarian tapi...",          "reward": "Tujuan. Bukan singgahan." },
-    { "w": "TUMBUH", "hint": "Yang kita lakuin walau susah.",                  "reward": "Masih struggling, masih thriving." }
+    {
+      "w": "BUCUK",
+      "hint": "Panggilan Marr kalau Aby lagi gemesin banget.",
+      "reward": "Bucuk. Nggak ada di KBBI, ada di hati Marr."
+    },
+    {
+      "w": "TOGA",
+      "hint": "Yang Aby pakai November 2025.",
+      "reward": "Toga itu berat. Aby tetap berdiri tegak."
+    },
+    {
+      "w": "RUMAH",
+      "hint": "Arti 'Indonesianya Marr' yang sebenarnya.",
+      "reward": "Aby rumah. Bukan kiasan."
+    },
+    {
+      "w": "SAYANG",
+      "hint": "Kata yang paling sering Marr kirim ke Aby.",
+      "reward": "Diketik ribuan kali, masih nggak basi."
+    },
+    {
+      "w": "BUNGA",
+      "hint": "Yang Aby pegang di atas motor, 27 Juni 2024.",
+      "reward": "Bunganya layu. Perasaannya enggak."
+    },
+    {
+      "w": "PULANG",
+      "hint": "Rasanya tiap Marr ketemu Aby.",
+      "reward": "Ketemu Aby itu rasanya pulang."
+    },
+    {
+      "w": "TETAP",
+      "hint": "Yang kita lakuin di tahun paling berat.",
+      "reward": "Kata kerja paling romantis yang Marr tahu."
+    },
+    {
+      "w": "MILIK",
+      "hint": "Yang Marr putusin tanggal 2 September 2024.",
+      "reward": "Miliknya Marr. Nggak nembak — mutusin."
+    },
+    {
+      "w": "JADWAL",
+      "hint": "Alasan Aby ngechat Marr pertama kali.",
+      "reward": "Pintu masuk paling nggak romantis sedunia."
+    },
+    {
+      "w": "RAMEN",
+      "hint": "Menu kita di meja 8-A, 12 September 2026.",
+      "reward": "Difoto dulu, baru boleh disentuh. Peraturan Bucuk."
+    },
+    {
+      "w": "MATCHA",
+      "hint": "Minumnya Aby waktu ramenan.",
+      "reward": "Matcha buat Aby, lemon tea buat Marr. Selalu."
+    },
+    {
+      "w": "MOTOR",
+      "hint": "Tempat Aby duduk di belakang Marr.",
+      "reward": "Pelan banget Marr nyetir. Bukan karena jalanan."
+    },
+    {
+      "w": "BIOSKOP",
+      "hint": "Kencan pertama kita — dan kencan kemarin juga.",
+      "reward": "Dua tahun, dua bioskop. Yang kedua ada fotonya."
+    },
+    {
+      "w": "TUJUAN",
+      "hint": "Aby buat Marr — bukan pelarian, tapi...",
+      "reward": "Tujuan. Bukan singgahan."
+    },
+    {
+      "w": "TUMBUH",
+      "hint": "Yang kita lakuin walau susah.",
+      "reward": "Masih struggling, masih thriving."
+    },
+    {
+      "w": "SUMPIT",
+      "hint": "Yang Aby angkat sambil monyong di foto meja 8-A.",
+      "reward": "Satu mata merem, sumpit di udara. Marr kepikiran seharian."
+    }
   ]
 }

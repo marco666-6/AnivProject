@@ -1,14 +1,20 @@
 /**
- * Arcade host.
+ * Game host.
+ *
+ * Games aren't in one arcade block any more — each one gets its own band
+ * between two content sections (the `[data-game-slot]` elements in index.html).
+ * GAMES[i] from games/index.js is mounted into slot i, so the registry order
+ * is the page order.
  *
  * ─── ADDING A GAME NEXT YEAR ──────────────────────────────────
  *   1. create public/js/games/my-game.js exporting a manifest
- *   2. add one import line to public/js/games/index.js
- *   3. (optional) add a reward line in content/letters.json → unlockables
- *   Nothing in this file needs to change. Ever.
+ *   2. import it in public/js/games/index.js and add it to GAMES
+ *   3. add one more <section class="section section--play" data-game-slot="N">
+ *      band to index.html wherever you want it in the scroll
+ *   4. (optional) add a reward line in content/letters.json → unlockables
  * ──────────────────────────────────────────────────────────────
  */
-import { $, el, nf, toast } from './util.js';
+import { $, $$, el, nf, toast } from './util.js';
 import { burst, burstAt, confetti } from './fx.js';
 import api, { local } from './api.js';
 import { GAMES } from './games/index.js';
@@ -47,45 +53,52 @@ function closeModal() {
   document.body.classList.remove('is-locked');
 }
 
-/* ─────────── progress UI ─────────── */
-function paintProgress() {
-  const total = GAMES.length;
-  const done = GAMES.filter((g) => unlocks.has(g.id)).length;
-  $('#arcade-bar-fill').style.width = `${(done / total) * 100}%`;
-  $('#arcade-progress-text').textContent =
-    done === total ? `semua ${total} kebuka — kamu juara 🤍` : `${done} dari ${total} kebuka`;
-  GAMES.forEach((g) => {
-    const card = document.getElementById(`gcard-${g.id}`);
-    if (!card) return;
-    card.classList.toggle('is-done', unlocks.has(g.id));
-    const badge = card.querySelector('.gcard__badge');
-    if (badge) badge.textContent = unlocks.has(g.id) ? '✓ kebuka' : 'belum';
-    const bestEl = card.querySelector('.gcard__best');
-    if (bestEl) bestEl.textContent = scoreLine(g);
-  });
-  paintVault();
-}
-
+/* ─────────── score line ─────────── */
 function scoreLine(g) {
   const b = best[g.id];
-  if (!b || b.best === undefined || b.best === null) return 'belum pernah dimainin';
-  const v = typeof b === 'object' ? b.best : b;
+  const v = typeof b === 'object' ? b?.best : b;
+  if (v === undefined || v === null) return 'belum pernah dimainin';
   return g.scoreLabel ? g.scoreLabel(v) : `skor terbaik ${nf.format(v)}`;
 }
 
-function paintVault() {
-  const list = $('#vault-list');
-  const items = GAMES.filter((g) => unlocks.has(g.id));
-  if (!items.length) {
-    list.replaceChildren(el('p', { class: 'vault__empty', text: 'Belum ada. Main satu game dulu ya 🤍' }));
-    return;
+/* ─────────── one band per game ─────────── */
+function paintBand(g, slot) {
+  const root = slot.querySelector('[data-play-root]');
+  if (!root) return;
+  const done = unlocks.has(g.id);
+  slot.style.setProperty('--g-tint', g.tint || 'rgba(224,82,109,.3)');
+  slot.classList.toggle('is-done', done);
+
+  root.replaceChildren(
+    el('p', { class: 'play__eyebrow', text: done ? 'kebuka' : 'sela — main dulu' }),
+    el('span', { class: 'play__icon', text: g.icon }),
+    el('h2', { class: 'play__name', text: g.name }),
+    el('p', { class: 'play__desc', text: g.desc }),
+    el('button', {
+      class: 'btn btn--primary play__btn',
+      text: done ? 'Main lagi' : 'Main',
+      onclick: (e) => { burstAt(e, 5); launch(g); },
+    }),
+    el('p', { class: 'play__best', text: scoreLine(g) }),
+    done && unlockables[g.id]
+      ? el('blockquote', { class: 'play__note' }, unlockables[g.id])
+      : null
+  );
+}
+
+function paintAll() {
+  const slots = $$('[data-game-slot]');
+  GAMES.forEach((g, i) => {
+    const slot = slots.find((s) => Number(s.dataset.gameSlot) === i);
+    if (slot) paintBand(g, slot);
+  });
+  const done = GAMES.filter((g) => unlocks.has(g.id)).length;
+  const foot = $('#footer-play');
+  if (foot) {
+    foot.textContent = done === GAMES.length
+      ? `semua ${GAMES.length} permainan kebuka — Aby juara 🤍`
+      : `${done} dari ${GAMES.length} permainan kebuka`;
   }
-  list.replaceChildren(...items.map((g, i) =>
-    el('div', { class: 'vnote', style: { animationDelay: `${i * 60}ms` } },
-      unlockables[g.id] || 'Kebuka. Tapi pesannya belum ditulis — nanti aku isi.',
-      el('small', { text: `dari ${g.name}` })
-    )
-  ));
 }
 
 /* ─────────── the ctx handed to each game ─────────── */
@@ -114,16 +127,16 @@ function makeCtx(game, root) {
       unlocks.add(game.id);
       const res = await api.unlock(game.id, game.name);
       if (res?.reward) unlockables[game.id] = res.reward;
-      paintProgress();
+      paintAll();
 
       if (!silent) {
         confetti(first ? 60 : 24);
-        showReveal(message || unlockables[game.id] || 'Kamu selesaiin. Aku bangga, serius. 🤍');
+        showReveal(message || unlockables[game.id] || 'Aby selesaiin. Marr bangga, serius. 🤍');
       }
       if (GAMES.every((g) => unlocks.has(g.id))) {
         setTimeout(() => {
           confetti(120);
-          showReveal('SEMUA KEBUKA.\n\nKamu selesaiin semuanya, satu-satu, sampai habis. Persis kayak cara kamu ngejalanin dua tahun ini.\n\nAku sayang kamu, Bucuk. Sampai ketemu di update tahun depan.');
+          showReveal('SEMUA KEBUKA.\n\nAby selesaiin semuanya, satu-satu, sampai habis. Persis kayak cara Aby ngejalanin dua tahun ini.\n\nMarr sayang Aby, Bucuk. Sampai ketemu di update tahun depan.');
         }, 3200);
       }
     },
@@ -153,23 +166,7 @@ export function initArcade(data) {
   unlocks = new Set([...(data.unlocks || []), ...(localState.unlocks || [])]);
   best = { ...(localState.best || {}), ...(data.best || {}) };
 
-  const grid = $('#arcade-grid');
-  grid.replaceChildren(...GAMES.map((g, i) =>
-    el('button', {
-      class: 'gcard rise',
-      id: `gcard-${g.id}`,
-      style: { '--g-tint': g.tint || 'rgba(224,82,109,.3)', transitionDelay: `${Math.min(i * 55, 400)}ms` },
-      onclick: () => launch(g),
-    },
-      el('span', { class: 'gcard__icon', text: g.icon }),
-      el('h3', { class: 'gcard__name', text: g.name }),
-      el('p', { class: 'gcard__desc', text: g.desc }),
-      el('div', { class: 'gcard__foot' },
-        el('span', { class: 'gcard__best' }),
-        el('span', { class: 'gcard__badge' })
-      )
-    )
-  ));
+  paintAll();
 
   $('#modal-close')?.addEventListener('click', closeModal);
   $('#modal-scrim')?.addEventListener('click', closeModal);
@@ -180,8 +177,6 @@ export function initArcade(data) {
     if (!$('#reveal').hidden) hideReveal();
     else if (!$('#modal').hidden) closeModal();
   });
-
-  paintProgress();
 }
 
 export { closeModal };

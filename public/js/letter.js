@@ -10,7 +10,7 @@ export function initLetter(letter) {
   if (!env || !body || !letter) return;
 
   const build = async () => {
-    body.replaceChildren(el('h3', { class: 'letter__title', text: letter.title || 'Surat, dari aku' }));
+    body.replaceChildren(el('h3', { class: 'letter__title', text: letter.title || 'Surat, dari Marr' }));
     body.hidden = false;
 
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -65,7 +65,7 @@ export function initReply(initial = []) {
     try {
       await api.addReply(text);
       draw(await api.replies());
-      toast('kebaca kok. makasih 🤍');
+      toast('kebaca kok, Buk. makasih 🤍');
       confetti(10);
     } catch {
       toast('gagal kirim — coba lagi ya');

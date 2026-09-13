@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS memories (
   title      TEXT NOT NULL,
   body       TEXT NOT NULL,
   photo      TEXT,
+  photo_caption TEXT,
   pin        INTEGER DEFAULT 0,
   anchor     INTEGER DEFAULT 0,
   approx     INTEGER DEFAULT 0,
@@ -114,6 +115,14 @@ try {
   fs.mkdirSync(path.dirname(DB_PATH), { recursive: true });
   db = new Database(DB_PATH);
   db.exec(SCHEMA);
+  // Additive migrations for databases created by an older version.
+  for (const [table, col, type] of [['memories', 'photo_caption', 'TEXT']]) {
+    const has = db.prepare(`PRAGMA table_info(${table})`).all().some((c) => c.name === col);
+    if (!has) {
+      db.exec(`ALTER TABLE ${table} ADD COLUMN ${col} ${type}`);
+      console.log(`[db] migrated: ${table}.${col} added`);
+    }
+  }
   driver = 'sqlite';
   console.log(`[db] sqlite ready → ${DB_PATH}`);
 } catch (err) {

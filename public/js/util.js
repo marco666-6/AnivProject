@@ -39,15 +39,24 @@ export const daily = (arr, offset = 0) =>
 
 const MONTHS = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
 
+/**
+ * Dates are deliberately fuzzy-tolerant. A photo or memory can carry:
+ *   "2024-06-27"  full date
+ *   "2025-11"     month only  (we know the month, not the day)
+ *   "2024"        year only
+ *   null / ""     unknown — nothing is invented, nothing is shown
+ */
 export const fmtDate = (iso) => {
   if (!iso) return '';
-  const [y, m, d] = iso.split('-').map(Number);
+  const [y, m, d] = String(iso).split('-').map(Number);
+  if (!m) return `${y}`;
+  if (!d) return `${MONTHS[m - 1]} ${y}`;
   return `${d} ${MONTHS[m - 1]} ${y}`;
 };
 export const fmtShort = (iso) => {
   if (!iso) return '';
-  const [y, m] = iso.split('-').map(Number);
-  return `${MONTHS[m - 1]} ${y}`;
+  const [y, m] = String(iso).split('-').map(Number);
+  return m ? `${MONTHS[m - 1]} ${y}` : `${y}`;
 };
 
 export const nf = new Intl.NumberFormat('id-ID');

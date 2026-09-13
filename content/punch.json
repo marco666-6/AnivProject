@@ -1,0 +1,19 @@
+{
+  "_comment": "Punch The Ex. ✏️ PUT THE REAL NAMES IN 'targets' — these are placeholders. 'hp' = how many punches it takes. 'quip' shows when the figure breaks. Delete or add as many as you want; the game adapts.",
+  "intro": "Satu-satu, sampai patah. Nggak usah sopan.",
+  "targets": [
+    { "name": "Mantan #1", "hp": 12, "quip": "Patah. Lanjut." },
+    { "name": "Mantan #2", "hp": 14, "quip": "Ini agak lama ya. Nggak apa-apa, udah kok." },
+    { "name": "Mantan #3", "hp": 16, "quip": "Yang terakhir sebelum Aby. Makasih udah nyerah." }
+  ],
+  "finale": {
+    "name": "Aby",
+    "guard": [
+      "Eh eh eh.",
+      "Yang ini nggak boleh.",
+      "Serius, jangan.",
+      "Ini bukan mantan, Buk. Ini tujuan."
+    ],
+    "line": "Semua yang tadi udah patah. Yang ini nggak akan pernah Marr pukul, nggak akan pernah Marr tinggalin, nggak akan pernah Marr jadiin mantan.\n\nCuma satu nama yang boleh berdiri utuh di sini."
+  }
+}

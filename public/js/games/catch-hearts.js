@@ -6,7 +6,7 @@ export default {
   name: 'Tangkap Hati',
   icon: '🧺',
   tint: 'rgba(224,82,109,.4)',
-  desc: 'Geser keranjangnya. Tangkap yang utuh, hindari yang retak. 45 detik.',
+  desc: 'Geser keranjangnya, Buk. Tangkap yang utuh, hindari yang retak. 45 detik.',
   scoring: 'high',
   scoreLabel: (v) => `rekor ${v} poin`,
 

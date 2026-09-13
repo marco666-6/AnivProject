@@ -28,8 +28,8 @@ export const replaceMemories = (rows) => {
   if (!sql) { mem.memories = rows.map((r, i) => ({ id: i + 1, ...r })); return; }
   const tx = db.transaction((list) => {
     db.prepare('DELETE FROM memories').run();
-    const ins = db.prepare(`INSERT INTO memories (key,date,icon,title,body,photo,pin,anchor,approx,sort)
-                            VALUES (@key,@date,@icon,@title,@body,@photo,@pin,@anchor,@approx,@sort)`);
+    const ins = db.prepare(`INSERT INTO memories (key,date,icon,title,body,photo,photo_caption,pin,anchor,approx,sort)
+                            VALUES (@key,@date,@icon,@title,@body,@photo,@photo_caption,@pin,@anchor,@approx,@sort)`);
     list.forEach((r) => ins.run(r));
   });
   tx(rows);

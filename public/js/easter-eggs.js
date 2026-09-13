@@ -25,7 +25,7 @@ export function initEasterEggs({ notes = [], showReveal }) {
       if (kIdx === KONAMI.length) {
         kIdx = 0;
         confetti(80);
-        showReveal('Kode rahasia. Kamu emang bucuk yang pinter. 🤍\n\nBonus: semua pesan di bawah ini aku tulis sambil senyum sendiri.');
+        showReveal('Kode rahasia. Aby emang bucuk yang pinter. 🤍\n\nBonus: semua pesan di halaman ini Marr tulis satu-satu, sambil senyum sendiri.');
       }
     } else kIdx = 0;
 
@@ -34,7 +34,7 @@ export function initEasterEggs({ notes = [], showReveal }) {
       buf = (buf + e.key.toLowerCase()).slice(-16);
       if (buf.endsWith('indonesia')) {
         buf = '';
-        showReveal('Kamu Indonesiaku.\n\nTanah, rumah, tempat aku pulang. Dua tahun lalu aku belum ngerti kenapa kata itu yang keluar. Sekarang ngerti.');
+        showReveal('Aby Indonesianya Marr.\n\nTanah, rumah, tempat Marr pulang. Dua tahun lalu Marr belum ngerti kenapa kata itu yang keluar. Sekarang ngerti.');
         confetti(60);
       }
       if (buf.endsWith('bucuk')) {
@@ -45,6 +45,20 @@ export function initEasterEggs({ notes = [], showReveal }) {
         toast('BUCUUUUK 🤍');
       }
       if (buf.endsWith('aby')) { buf = ''; toast(pick(notes) || 'Aby 🤍', 4200); }
+      if (buf.endsWith('givit')) {
+        buf = '';
+        confetti(40);
+        showReveal('Givit Yabes Mikael Sirait.\n\n"Give it your best" — bukan jadi yang terbaik, tapi ngasih yang terbaik. Marr mau itu jadi hal pertama yang dia bawa ke dunia.');
+      }
+      if (buf.endsWith('ain')) {
+        buf = '';
+        confetti(40);
+        showReveal('Ain Novelia Mikaela Sirait.\n\n"I ain\'t no failure" — buat anak perempuan kita. Biar dia nggak pernah perlu diyakinin soal itu. Aby juga nggak, ya.');
+      }
+      if (buf.endsWith('sirait')) {
+        buf = '';
+        toast('Givit sama Ain. Dua dulu, Buk. Yang ketiga hahahaha 🤍', 5200);
+      }
     }
   });
 
@@ -57,7 +71,7 @@ export function initEasterEggs({ notes = [], showReveal }) {
     burst(e.clientX, e.clientY, 4);
     if (taps === 7) {
       taps = 0;
-      showReveal('Tujuh kali. Kamu keras kepala — dan itu salah satu alasan aku sayang kamu.\n\nHalaman ini bakal aku tambahin terus tiap tahun. Jangan lupa balik ke sini ya.');
+      showReveal('Tujuh kali. Aby keras kepala — dan itu salah satu alasan Marr sayang Aby.\n\nHalaman ini bakal Marr tambahin terus tiap tahun. Jangan lupa balik ke sini ya, Buk.');
     }
   });
 
@@ -71,7 +85,7 @@ export function initEasterEggs({ notes = [], showReveal }) {
       amp = 0;
       const [a, b] = [$('.hero__line'), $('.hero__line--her')];
       const t = a.textContent; a.textContent = b.textContent; b.textContent = t;
-      toast('kamu duluan, selalu boleh 🤍');
+      toast('Aby duluan, selalu boleh 🤍');
     }
   });
 
@@ -94,7 +108,7 @@ export function initEasterEggs({ notes = [], showReveal }) {
     clearTimeout(idle);
     idle = setTimeout(() => {
       if (document.hidden) return;
-      toast(pick(notes) || 'masih di sini? 🤍', 5200);
+      toast(pick(notes) || 'masih di sini, Buk? 🤍', 5200);
     }, 90000);
   };
   ['pointerdown','keydown','scroll','touchstart'].forEach((ev) =>

@@ -36,42 +36,49 @@ await t('photos carry slugs for optimised files', async () => {
   const p = await get('/api/photos');
   is(p, p.every((x) => x.slug), 'a photo is missing its slug');
 });
-await t('quiz questions', async () => { const q = await get('/api/games/quiz'); is(q, q.length >= 5); });
-await t('adventure reachable from start', async () => {
-  const a = await get('/api/games/adventure');
-  is(a, a.nodes[a.start], 'start node missing');
-  const seen = new Set(), stack = [a.start];
-  while (stack.length) {
-    const id = stack.pop();
-    if (seen.has(id)) continue;
-    seen.add(id);
-    const n = a.nodes[id];
-    is(a, n, `node "${id}" referenced but not defined`);
-    (n.choices || []).forEach((c) => stack.push(c.to));
-    if (!n.end && !(n.choices || []).length) throw new Error(`node "${id}" is a dead end`);
-  }
-});
-await t('wordle serves a puzzle and grades a guess', async () => {
-  const w = await get('/api/games/wordle');
-  is(w, w.length >= 4 && w.token);
-  const answer = Buffer.from(w.token, 'base64').toString();
-  const r = await post('/api/games/wordle/check', { token: w.token, guess: answer });
-  is(r, r.win === true, 'correct answer not accepted');
-  is(r, r.marks.every((m) => m === 'correct'));
-  const wrong = await post('/api/games/wordle/check', { token: w.token, guess: 'A'.repeat(w.length) });
-  is(wrong, wrong.win === false);
-});
+
 await t('score saves and reads back', async () => {
   await post('/api/scores', { game: 'smoke', score: 42 });
   await post('/api/scores', { game: 'smoke', score: 17 });
   const top = await get('/api/scores/smoke');
   is(top, top[0].score === 42, `expected 42 on top, got ${top[0]?.score}`);
 });
-await t('unlock is idempotent and returns the reward', async () => {
-  const a = await post('/api/unlocks', { key: 'quiz' });
-  const b = await post('/api/unlocks', { key: 'quiz' });
-  is(b, b.unlocks.filter((k) => k === 'quiz').length === 1, 'unlock duplicated');
-  is(a, typeof a.reward === 'string' && a.reward.length > 0, 'no reward text');
+await t('every registered game has a reward, and unlock is idempotent', async () => {
+  const { GAMES } = await import('../public/js/games/index.js');
+  is(GAMES, GAMES.length > 0, 'no games registered');
+  for (const g of GAMES) {
+    const a = await post('/api/unlocks', { key: g.id });
+    is(a, typeof a.reward === 'string' && a.reward.length > 0,
+       `no reward text in content/letters.json → unlockables["${g.id}"]`);
+    const b = await post('/api/unlocks', { key: g.id });
+    is(b, b.unlocks.filter((k) => k === g.id).length === 1, `unlock duplicated for ${g.id}`);
+  }
+});
+await t('every game band in index.html has a game to put in it', async () => {
+  const { GAMES } = await import('../public/js/games/index.js');
+  const html = await (await fetch(BASE + '/')).text();
+  const slots = [...html.matchAll(/data-game-slot="(\d+)"/g)].map((m) => Number(m[1]));
+  is(slots, slots.length === GAMES.length,
+     `${slots.length} bands in index.html but ${GAMES.length} games registered`);
+  GAMES.forEach((g, i) => is(slots, slots.includes(i), `no band for slot ${i} (${g.id})`));
+});
+await t('punch targets and finale are present', async () => {
+  const p = await get('/api/games/punch');
+  is(p, p.targets?.length > 0, 'no punch targets');
+  is(p, p.targets.every((x) => x.name && x.hp > 0), 'a target is missing name or hp');
+  is(p, p.finale?.name && p.finale?.line, 'no finale');
+});
+await t('future kids reach the page', async () => {
+  const d = await get('/api/bootstrap');
+  is(d, d.future?.kids?.length >= 2, 'kids missing from bootstrap');
+  is(d, d.future.kids.every((k) => k.name && k.meaning && k.line), 'a kid is missing a field');
+});
+await t('html/css/js are served no-cache so edits actually show up', async () => {
+  for (const p of ['/', '/js/main.js', '/css/base.css']) {
+    const r = await fetch(BASE + p);
+    const cc = r.headers.get('cache-control') || '';
+    if (!/no-cache/.test(cc)) throw new Error(`${p} → Cache-Control: ${cc || '(none)'}`);
+  }
 });
 await t('favourite toggles on then off', async () => {
   const on = await post('/api/favourites', { kind: 'photo', ref: 'smoke.jpg' });

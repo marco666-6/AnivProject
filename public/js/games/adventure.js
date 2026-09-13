@@ -1,12 +1,12 @@
-/** Pilih Jalanmu — a walk back through their story, with choices. */
+/** Pilih Jalan Kita — a walk back through their story, with choices. */
 import api from '../api.js';
 
 export default {
   id: 'adventure',
-  name: 'Pilih Jalanmu',
+  name: 'Pilih Jalan Kita',
   icon: '🗺️',
   tint: 'rgba(127,183,164,.32)',
-  desc: 'Ulang cerita kita dari awal. Kamu yang milih jalannya.',
+  desc: 'Ulang cerita kita dari awal. Aby yang milih jalannya.',
   scoring: 'high',
   scoreLabel: (v) => `${v} langkah dilewatin`,
 

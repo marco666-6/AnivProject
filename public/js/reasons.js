@@ -1,4 +1,4 @@
-/** "Alasan aku sayang kamu" — draw-a-card deck plus a full list view. */
+/** "Alasan Marr sayang Aby" — draw-a-card deck plus a full list view. */
 import { $, el, shuffle, toast } from './util.js';
 import { burstAt } from './fx.js';
 
@@ -28,7 +28,7 @@ export function initReasons(reasons) {
   const draw = (ev) => {
     if (!bag.length) {
       bag = shuffle(reasons);
-      toast('tumpukannya diacak ulang 🤍');
+      toast('tumpukannya Marr acak ulang 🤍');
     }
     const r = bag.shift();
     drawn++;

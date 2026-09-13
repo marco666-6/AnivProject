@@ -11,7 +11,7 @@ export function initCounter(config) {
   const sinceEl = $('.counter__since');
 
   if (sinceEl) {
-    sinceEl.innerHTML = `sejak <b>${fmtDate(startISO)}</b> — ${config?.hero?.kicker?.split('—').pop()?.trim() || 'hari aku menyebutmu Indonesiaku'}`;
+    sinceEl.innerHTML = `sejak <b>${fmtDate(startISO)}</b> — ${config?.hero?.kicker?.split('—').pop()?.trim() || 'hari Marr menyebut Aby Indonesianya'}`;
   }
 
   // count-up animation on first paint

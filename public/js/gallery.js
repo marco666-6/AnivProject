@@ -27,7 +27,7 @@ export function renderGallery(list, initialFavs = []) {
       el('span', { class: 'shot__fav', text: '🤍' }),
       el('div', { class: 'shot__veil' },
         el('p', { class: 'shot__t', text: p.title || '' }),
-        el('p', { class: 'shot__d', text: fmtShort(p.date) })
+        el('p', { class: 'shot__d', text: fmtShort(p.date) || '—' })
       )
     );
 
@@ -36,7 +36,7 @@ export function renderGallery(list, initialFavs = []) {
       longPressed = true;
       const on = await api.toggleFavourite('photo', p.file);
       card.classList.toggle('is-fav', on);
-      if (on) { burstAt(ev, 7); toast('disimpen 🤍'); }
+      if (on) { burstAt(ev, 7); toast('disimpen Marr 🤍'); }
     };
 
     card.addEventListener('pointerdown', (ev) => {
@@ -75,7 +75,7 @@ export function open(i) {
   cap.append(
     el('b', { text: p.title || '' }),
     el('span', { text: p.caption || '' }),
-    el('i', { text: `${fmtShort(p.date)} · ${cur + 1} dari ${photos.length}` })
+    el('i', { text: [fmtShort(p.date), `${cur + 1} dari ${photos.length}`].filter(Boolean).join(' · ') })
   );
 
   box().hidden = false;

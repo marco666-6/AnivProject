@@ -43,8 +43,8 @@
   <nav class="topbar__nav" aria-label="Bagian">
     <a href="#timeline">Cerita</a>
     <a href="#gallery">Foto</a>
-    <a href="#arcade" class="is-accent">Arcade</a>
     <a href="#reasons">Alasan</a>
+    <a href="#nanti" class="is-accent">Nanti</a>
     <a href="#letter">Surat</a>
   </nav>
   <button class="topbar__music" id="music-toggle" aria-pressed="false" title="Musik">
@@ -72,13 +72,13 @@
           <span class="counter__unit">hari bersama</span>
         </div>
         <div class="counter__row" id="counter-row"></div>
-        <p class="counter__since">sejak <b>2 September 2024</b> — hari aku menyebutmu Indonesiaku</p>
+        <p class="counter__since">sejak <b>2 September 2024</b> — hari Marr menyebut Aby Indonesianya</p>
       </div>
 
       <p class="hero__rotate" id="hero-rotate"></p>
 
       <div class="hero__cta">
-        <a class="btn btn--primary" href="#arcade">Main dulu, yuk →</a>
+        <a class="btn btn--primary" href="#play-1">Main dulu, yuk →</a>
         <a class="btn btn--quiet" href="#letter">Baca suratnya</a>
       </div>
     </div>
@@ -90,9 +90,14 @@
     <div class="section__head">
       <p class="section__eyebrow">01 — kronologi</p>
       <h2 class="section__title" data-bind="timelineTitle">Jalan cerita kita</h2>
-      <p class="section__lede">Dari chat soal jadwal kuliah, sampai topi toga yang dilempar ke udara.</p>
+      <p class="section__lede">Dari chat soal jadwal kuliah, sampai ramen di meja 8-A.</p>
     </div>
     <ol class="timeline" id="timeline-list"></ol>
+  </section>
+
+  <!-- ░░ GAME 1 ░░ -->
+  <section class="section section--play" id="play-1" data-game-slot="0">
+    <div class="play" data-play-root></div>
   </section>
 
   <!-- ░░ GALLERY ░░ -->
@@ -100,35 +105,22 @@
     <div class="section__head">
       <p class="section__eyebrow">02 — arsip</p>
       <h2 class="section__title" data-bind="galleryTitle">Kita, dalam potongan-potongan</h2>
-      <p class="section__lede">Ketuk fotonya. Tahan buat kasih hati.</p>
+      <p class="section__lede">Ketuk fotonya, Buk. Tahan buat kasih hati.</p>
     </div>
     <div class="gallery" id="gallery-grid"></div>
   </section>
 
-  <!-- ░░ ARCADE ░░ -->
-  <section class="section section--dark" id="arcade">
-    <div class="section__head">
-      <p class="section__eyebrow">03 — main-main</p>
-      <h2 class="section__title" data-bind="arcadeTitle">Arcade Bucuk</h2>
-      <p class="section__lede">Sembilan permainan. Tiap satu yang kamu selesaikan, ada pesan yang kebuka.</p>
-      <div class="arcade__progress">
-        <div class="arcade__bar"><span id="arcade-bar-fill"></span></div>
-        <p id="arcade-progress-text">0 dari 9 kebuka</p>
-      </div>
-    </div>
-    <div class="arcade" id="arcade-grid"></div>
-    <div class="vault" id="vault">
-      <h3 class="vault__title">Pesan yang udah kebuka</h3>
-      <div class="vault__list" id="vault-list"><p class="vault__empty">Belum ada. Main satu game dulu ya 🤍</p></div>
-    </div>
+  <!-- ░░ GAME 2 ░░ -->
+  <section class="section section--play" id="play-2" data-game-slot="1">
+    <div class="play" data-play-root></div>
   </section>
 
   <!-- ░░ REASONS ░░ -->
   <section class="section section--tint" id="reasons">
     <div class="section__head">
-      <p class="section__eyebrow">04 — daftar panjang</p>
-      <h2 class="section__title" data-bind="reasonsTitle">Alasan aku sayang kamu</h2>
-      <p class="section__lede">Tarik satu kartu. Atau lihat semuanya sekaligus.</p>
+      <p class="section__eyebrow">03 — daftar panjang</p>
+      <h2 class="section__title" data-bind="reasonsTitle">Alasan Marr sayang Aby</h2>
+      <p class="section__lede">Tarik satu kartu, Aby. Atau lihat semuanya sekaligus.</p>
     </div>
 
     <div class="deck" id="deck">
@@ -143,11 +135,32 @@
     <ul class="reasons-list" id="reasons-list" hidden></ul>
   </section>
 
+  <!-- ░░ GAME 3 ░░ -->
+  <section class="section section--play" id="play-3" data-game-slot="2">
+    <div class="play" data-play-root></div>
+  </section>
+
+  <!-- ░░ NANTI ░░ -->
+  <section class="section section--tint" id="nanti">
+    <div class="section__head">
+      <p class="section__eyebrow">04 — nanti</p>
+      <h2 class="section__title">Dua nama yang udah kita siapin</h2>
+      <p class="section__lede">Orangnya belum ada. Namanya udah ada, lengkap sama artinya.</p>
+    </div>
+    <div class="kids" id="kids"></div>
+    <p class="kids__note" id="kids-note"></p>
+  </section>
+
+  <!-- ░░ GAME 4 ░░ -->
+  <section class="section section--play" id="play-4" data-game-slot="3">
+    <div class="play" data-play-root></div>
+  </section>
+
   <!-- ░░ LETTER ░░ -->
   <section class="section" id="letter">
     <div class="section__head">
       <p class="section__eyebrow">05 — yang paling penting</p>
-      <h2 class="section__title" data-bind="letterSectionTitle">Surat, dari aku</h2>
+      <h2 class="section__title" data-bind="letterSectionTitle">Surat, dari Marr</h2>
     </div>
 
     <div class="envelope" id="envelope">
@@ -161,7 +174,7 @@
 
     <div class="reply" id="reply">
       <h3 class="reply__title">Mau bales?</h3>
-      <p class="reply__sub">Tulis apa aja. Cuma aku yang baca.</p>
+      <p class="reply__sub">Tulis apa aja, Buk. Cuma Marr yang baca.</p>
       <form class="reply__form" id="reply-form">
         <textarea id="reply-input" rows="3" maxlength="2000" placeholder="tulis di sini…"></textarea>
         <button class="btn btn--primary" type="submit">Kirim</button>
@@ -170,10 +183,16 @@
     </div>
   </section>
 
+  <!-- ░░ GAME 5 ░░ -->
+  <section class="section section--play" id="play-5" data-game-slot="4">
+    <div class="play" data-play-root></div>
+  </section>
+
   <footer class="footer">
     <div class="footer__heart" id="footer-heart">🤍</div>
-    <p class="footer__line">Dibuat tangan sendiri, buat <b>Ayu Sihombing</b>.</p>
-    <p class="footer__sub">Aby · Bebelac Gold · Bucuk · Indonesiaku</p>
+    <p class="footer__line">Dibuat tangan sendiri sama Marr, buat <b>Ayu Sihombing</b>.</p>
+    <p class="footer__sub">Aby · Bebelac Gold · Bucuk · Indonesianya Marr</p>
+    <p class="footer__play" id="footer-play"></p>
     <p class="footer__meta" id="footer-meta"></p>
   </footer>
 

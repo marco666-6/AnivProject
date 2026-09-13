@@ -6,7 +6,7 @@ export default {
   name: 'Susun Ulang',
   icon: '🧩',
   tint: 'rgba(217,164,65,.32)',
-  desc: 'Fotonya berantakan. Geser sampai balik ke tempatnya.',
+  desc: 'Fotonya berantakan. Geser sampai balik ke tempatnya, Aby.',
   scoring: 'low',
   scoreLabel: (v) => `rekor ${v} geseran`,
 

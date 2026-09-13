@@ -1,54 +1,64 @@
 {
   "_comment": "EDIT ME EACH YEAR. Everything here shows up on the site. No code changes needed.",
-
   "site": {
     "title": "Aniv — Marco & Aby",
-    "tagline": "dua tahun, dan masih milikku",
+    "tagline": "dua tahun, dan Aby masih miliknya Marr",
     "favicon": "🤍"
   },
-
   "people": {
     "her": {
       "name": "Ayu Sihombing",
       "short": "Ayu",
-      "nicknames": ["Aby", "Ayu Baby", "Bebelac Gold", "Bucuk"],
+      "nicknames": [
+        "Aby",
+        "Ayu Baby",
+        "Bebelac Gold",
+        "Bucuk"
+      ],
       "initial": "A"
     },
     "him": {
       "name": "Marco",
       "short": "Marco",
-      "nicknames": ["Marco"],
+      "nicknames": [
+        "Marco"
+      ],
       "initial": "M"
     }
   },
-
   "dates": {
-    "_comment": "ISO format YYYY-MM-DD. 'together' drives the live day-counter.",
+    "_comment": "ISO format. 'together' drives the live day-counter. A month-only value like \"2025-11\" is fine where the day isn't known.",
     "firstMessage": "2024-08-21",
     "together": "2024-09-02",
     "firstDate": "2024-09-16",
     "firstDateApprox": true,
-    "anniversaryDay": "09-02"
+    "anniversaryDay": "09-02",
+    "graduation": "2025-11"
   },
-
   "milestones": {
     "_comment": "Extra counters shown under the main day-counter.",
-    "show": ["days", "hours", "months", "nextAnniversary"]
+    "show": [
+      "days",
+      "hours",
+      "months",
+      "nextAnniversary"
+    ]
   },
-
   "hero": {
-    "kicker": "02 September 2024 — hari aku menyebutmu Indonesiaku",
+    "kicker": "02 September 2024 — hari Marr menyebut Aby Indonesianya",
     "rotatingLines": [
-      "Aku nggak pernah nembak kamu. Aku cuma memutuskan kamu milikku.",
-      "Dua tahun. Masih kamu. Selalu kamu.",
+      "Marr nggak pernah nembak Aby. Marr cuma memutuskan Aby miliknya.",
+      "Dua tahun. Masih Aby. Selalu Aby.",
       "Bucuk, kalau dunia berat, kita berat bareng.",
-      "Kamu bukan sekadar pacarku. Kamu tujuanku.",
-      "Bebelac Gold — nutrisi terbaik buat hidupku.",
-      "We didn't have money, energy, or an easy year. We had each other. Cukup."
+      "Aby bukan sekadar pacarnya Marr. Aby tujuannya.",
+      "Bebelac Gold — nutrisi terbaik buat hidupnya Marr.",
+      "Nggak punya duit, nggak punya tenaga, tahunnya berat. Tapi punya Aby. Cukup.",
+      "Meja 8-A, ramen berdua, terus nonton. Marr mau ulang itu tiap tahun.",
+      "Givit sama Ain belum lahir. Namanya udah ada. Itu tandanya Marr serius.",
+      "Dua nama udah kita siapin. Yang ketiga? Hahahaha nanti aja."
     ],
     "photo": "IMG_20240627_175729.jpg"
   },
-
   "theme": {
     "_comment": "Tweak the whole colour mood from here.",
     "ink": "#2b1d26",
@@ -59,17 +69,36 @@
     "plum": "#6a3550",
     "mint": "#7fb7a4"
   },
-
   "music": {
     "_comment": "Drop an mp3 at public/audio/theme.mp3 and it will be used. Otherwise a soft generated lullaby plays.",
     "file": "audio/theme.mp3",
     "generatedFallback": true,
     "defaultOn": false
   },
-
-  "letterSectionTitle": "Surat, dari aku",
-  "reasonsTitle": "Alasan aku sayang kamu",
+  "letterSectionTitle": "Surat, dari Marr",
+  "reasonsTitle": "Alasan Marr sayang Aby",
   "galleryTitle": "Kita, dalam potongan-potongan",
   "timelineTitle": "Jalan cerita kita",
-  "arcadeTitle": "Arcade Bucuk"
+  "arcadeTitle": "Arcade Bucuk",
+  "future": {
+    "_comment": "Shown in the 'Nanti' section. Add a third whenever you two decide.",
+    "kicker": "Belum lahir. Udah punya nama.",
+    "kids": [
+      {
+        "name": "Givit Yabes Mikael Sirait",
+        "call": "Givit",
+        "gender": "boy",
+        "meaning": "Give it your best",
+        "line": "Marr mau anak pertama kita tumbuh sama satu kalimat itu di namanya. Bukan 'jadi yang terbaik' — tapi 'kasih yang terbaik'. Bedanya jauh."
+      },
+      {
+        "name": "Ain Novelia Mikaela Sirait",
+        "call": "Ain",
+        "gender": "girl",
+        "meaning": "I ain't no failure",
+        "line": "Buat anak perempuan kita. Biar dia nggak pernah perlu diyakinin soal itu — udah ketulis dari lahir, sama kayak mamanya."
+      }
+    ],
+    "third": "Yang ketiga belum kepikiran. Hahahaha. Nanti aja, satu-satu."
+  }
 }

@@ -1,6 +1,9 @@
 # Aniv 🤍
 
-A little house on the internet for **Marco & Ayu (Aby)**.
+A little house on the internet for **Marr & Aby**.
+
+The copy talks to her as **Aby / Bebelac / Bucuk** and refers to him as **Marr**,
+not `kamu`/`aku` — keep that voice when you add to `content/`.
 Built to be *added to* every year, not rebuilt.
 
 Day zero: **2 September 2024** — the day I called you my Indonesia.
@@ -84,6 +87,18 @@ AnivProject/
    ```json
    { "file": "IMG_1234.jpg", "date": "2027-09-02", "title": "…", "caption": "…", "tags": ["us"] }
    ```
+
+**Dates are optional and fuzzy on purpose** — never invent one:
+
+| value | shows as |
+|---|---|
+| `"2026-09-12"` | 12 September 2026 |
+| `"2025-11"` | November 2025 |
+| `"2025"` | 2025 |
+| `null` | nothing (gallery shows `—`, timeline shows "entah kapan") |
+
+Order on the page comes from the order in the JSON, not from the date — so a
+photo with no date still sits exactly where you want it.
 
 ### Add a memory to the timeline
 Append to `content/memories.json` → `entries`. Set `"anchor": true` to make the dot glow.

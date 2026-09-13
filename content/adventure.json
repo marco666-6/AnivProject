@@ -3,7 +3,7 @@
   "start": "wa",
   "nodes": {
     "wa": {
-      "title": "21 Agustus 2024, malam",
+      "title": "21 Agustus 2023, malam",
       "text": "HP Marr nyala. Satu chat masuk dari cewek di kelas sebelah:\n\n\"Kak, punya panduan dosen yang kemarin nggak? Aku ketinggalan jadwal sama literaturnya.\"\n\nJantung Marr nggak bereaksi apa-apa. Belum.",
       "choices": [
         {
@@ -115,7 +115,7 @@
       ]
     },
     "sept": {
-      "title": "2 September 2024",
+      "title": "2 September 2023",
       "text": "Sekarang bagian yang penting.\n\nMarr bisa nembak Aby dengan cara normal: bunga, lagu, kalimat yang dilatih depan cermin. Atau Marr bisa melakukan hal yang sebenarnya dia lakukan — nggak nembak sama sekali, cuma memutuskan di dalam kepalanya sendiri bahwa Aby tujuannya, Aby miliknya, Aby pacarnya.",
       "choices": [
         {
@@ -154,7 +154,7 @@
     },
     "indonesia": {
       "title": "Indonesianya Marr",
-      "text": "Marr nggak ngomong apa-apa yang bisa dipotret. Marr cuma manggil Aby Indonesianya.\n\nTanah. Rumah. Tempat pulang.\n\nWaktu itu Marr nggak ngerti kenapa kata itu yang keluar. Dua tahun kemudian, ngerti.",
+      "text": "Marr nggak ngomong apa-apa yang bisa dipotret. Marr cuma manggil Aby Indonesianya.\n\nTanah. Rumah. Tempat pulang.\n\nWaktu itu Marr nggak ngerti kenapa kata itu yang keluar. Tiga tahun kemudian, ngerti.",
       "choices": [
         {
           "t": "Lanjut ke kencan pertama",
@@ -242,7 +242,7 @@
     },
     "akhir": {
       "title": "2 September 2026",
-      "text": "Dua tahun.\n\nMasih belum kaya. Masih capek. Masih berjuang.\n\nTapi masih tumbuh — dan masih milih.\n\nCuma ceritanya belum selesai di sini. Sepuluh hari lagi ada satu hal kecil yang harus Marr bayar.",
+      "text": "Tiga tahun.\n\nMasih belum kaya. Masih capek. Masih berjuang.\n\nTapi masih tumbuh — dan masih milih.\n\nCuma ceritanya belum selesai di sini. Sepuluh hari lagi ada satu hal kecil yang harus Marr bayar.",
       "choices": [
         {
           "t": "Sepuluh hari kemudian →",
@@ -286,7 +286,7 @@
     },
     "bioskop-lagi": {
       "title": "Bioskop. Lagi.",
-      "text": "Karpet hijau, poster film, antrian orang di belakang.\n\nDua tahun lalu kita ada di tempat kayak gini juga, dan kita pulang tanpa satu pun foto.\n\nSekarang Marr berdiri di lobi yang sama-sama ramenya, dan ada satu hal yang harus dia lakuin sebelum lampu mati.",
+      "text": "Karpet hijau, poster film, antrian orang di belakang.\n\nTiga tahun lalu kita ada di tempat kayak gini juga, dan kita pulang tanpa satu pun foto.\n\nSekarang Marr berdiri di lobi yang sama-sama ramenya, dan ada satu hal yang harus dia lakuin sebelum lampu mati.",
       "choices": [
         {
           "t": "Angkat HP. Foto.",
@@ -300,7 +300,7 @@
     },
     "nanti": {
       "title": "Nanti aja",
-      "text": "Marr hampir. Hampir aja ngulang kesalahan yang sama persis, dua tahun kemudian.\n\nTerus Aby narik lengannya dan majuin HP-nya sendiri.\n\n\"Sini. Foto.\"",
+      "text": "Marr hampir. Hampir aja ngulang kesalahan yang sama persis, tiga tahun kemudian.\n\nTerus Aby narik lengannya dan majuin HP-nya sendiri.\n\n\"Sini. Foto.\"",
       "choices": [
         {
           "t": "Ya udah, foto.",
@@ -310,7 +310,7 @@
     },
     "lunas": {
       "title": "Lunas",
-      "text": "Klik.\n\nAby di depan, Marr nyender di bahunya, dua-duanya nyengir ke kamera depan.\n\nUtang dokumentasi dari 2024 — lunas.\n\nDua tahun, satu bioskop, dan akhirnya ada buktinya. Halaman ini Marr bikin biar Aby bisa balik ke sini kapan aja. Tahun depan bakal Marr tambahin lagi.\n\nSelamat dua tahun, Indonesiaku.",
+      "text": "Klik.\n\nAby di depan, Marr nyender di bahunya, dua-duanya nyengir ke kamera depan.\n\nUtang dokumentasi dari 2023 — lunas.\n\nTiga tahun, satu bioskop, dan akhirnya ada buktinya. Halaman ini Marr bikin biar Aby bisa balik ke sini kapan aja. Tahun depan bakal Marr tambahin lagi.\n\nSelamat tiga tahun, Indonesiaku.",
       "end": true
     }
   }

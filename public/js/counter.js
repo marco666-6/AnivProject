@@ -4,7 +4,7 @@ import { $, nf, fmtDate, el } from './util.js';
 const MS = { s: 1000, m: 60000, h: 3600000, d: 86400000 };
 
 export function initCounter(config) {
-  const startISO = config?.dates?.together || '2024-09-02';
+  const startISO = config?.dates?.together || '2023-09-02';
   const start = new Date(`${startISO}T00:00:00`);
   const numEl = $('#days');
   const rowEl = $('#counter-row');

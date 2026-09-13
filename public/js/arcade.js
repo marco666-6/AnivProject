@@ -136,7 +136,7 @@ function makeCtx(game, root) {
       if (GAMES.every((g) => unlocks.has(g.id))) {
         setTimeout(() => {
           confetti(120);
-          showReveal('SEMUA KEBUKA.\n\nAby selesaiin semuanya, satu-satu, sampai habis. Persis kayak cara Aby ngejalanin dua tahun ini.\n\nMarr sayang Aby, Bucuk. Sampai ketemu di update tahun depan.');
+          showReveal('SEMUA KEBUKA.\n\nAby selesaiin semuanya, satu-satu, sampai habis. Persis kayak cara Aby ngejalanin tiga tahun ini.\n\nMarr sayang Aby, Bucuk. Sampai ketemu di update tahun depan.');
         }, 3200);
       }
     },

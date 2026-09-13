@@ -2,25 +2,25 @@
   "_comment": "The timeline, in page order. 'date' can be a full date, a month (\"2025-11\"), a year, or null. 'photo' is optional; when you use one, always write a 'photoCaption' saying what's actually in it — and say so plainly when the photo isn't from that exact day.",
   "entries": [
     {
-      "date": "2024-08-21",
+      "date": "2023-08-21",
       "icon": "📖",
       "title": "Chat pertama yang bukan apa-apa",
-      "body": "Aby ngechat nanyain kampus, literatur, jadwal — katanya kangen panduan dosen. Marr jawab sok santai. Padahal Marr baca ulang chat itu tiga kali sebelum bales. Nggak ada yang tahu ini awal dari semuanya.",
+      "body": "Aby ngechat nanyain kampus, literatur, jadwal — katanya kangen panduan dosen. Marr jawab sok santai. Padahal Marr baca ulang chat itu tiga kali sebelum bales. Nggak ada yang tahu ini awal dari semuanya. Dan yang paling lucu, justru Marr yang lupa soal tanggal 21 itu, bukan Aby.",
       "photo": null,
       "pin": true
     },
     {
-      "date": "2024-09-02",
+      "date": "2023-09-02",
       "icon": "🇮🇩",
       "title": "Hari Marr menyebut Aby Indonesianya",
       "body": "Nggak ada nembak. Nggak ada bunga, nggak ada lagu, nggak ada penonton. Cuma satu keputusan di kepala Marr: Aby tujuannya, Aby miliknya, Aby pacarnya. Hari itu Marr manggil Aby Indonesiaku — tanah, rumah, tempat pulang. Dan sampai hari ini Bebelac masih itu.",
       "photo": "WIN_20240820_07_08_55_Pro.jpg",
       "pin": true,
       "anchor": true,
-      "photoCaption": "Fotonya dari 20 Agustus, dua minggu sebelum tanggal ini — bukan dari hari itu. Webcam pagi, Aby nyender di bahu Marr. Muka dua orang yang belum tahu apa yang bakal diputusin dua belas hari lagi."
+      "photoCaption": "Fotonya ini gatau dari kapan, dua minggu sebelum tanggal ini — bukan dari hari itu. Webcam pagi, Aby nyender di bahu Marr. Muka dua orang yang belum tahu apa yang bakal diputusin dua belas hari lagi."
     },
     {
-      "date": "2024-09-16",
+      "date": "2023-09-16",
       "icon": "🎬",
       "title": "Nonton, tanpa bukti",
       "body": "Dua mingguan setelah tanggal 2. Kencan resmi pertama, nonton film di bioskop. Dan kita lupa foto — nol dokumentasi, nggak ada satu pun. Dulu Marr nyesel. Sekarang enggak: hari itu nggak dititipin ke kamera, cuma punya kita berdua.",
@@ -54,21 +54,21 @@
     {
       "date": "2026-09-02",
       "icon": "🤍",
-      "title": "Dua tahun",
-      "body": "Dua tahun sejak Marr memutuskan Aby miliknya. Masih belum kaya, masih capek, masih berjuang. Tapi masih tumbuh. Dan halaman ini Marr bikin biar Bebelac tahu: Marr nggak lagi bertahan — Marr milih, tiap hari, terus-terusan.",
+      "title": "Tiga tahun",
+      "body": "Tiga tahun sejak Marr memutuskan Aby miliknya. Masih belum kaya, masih capek, masih berjuang. Tapi masih tumbuh. Dan halaman ini Marr bikin biar Bebelac tahu: Marr nggak lagi bertahan — Marr milih, tiap hari, terus-terusan.",
       "photo": "WSD PHOTO 5.jpeg",
       "pin": true,
       "anchor": true,
-      "photoCaption": "Fotonya dari wisuda November 2025, bukan dari 2 September. Pose resminya kaku, tapi tangan tetap nyari tangan. Buat Marr itu gambar paling pas buat nunjukin dua tahun ini."
+      "photoCaption": "Fotonya dari wisuda November 2025, bukan dari 2 September. Pose resminya kaku, tapi tangan tetap nyari tangan. Buat Marr itu gambar paling pas buat nunjukin tiga tahun ini."
     },
     {
       "date": "2026-09-12",
       "icon": "🍜",
       "title": "Ramen, terus nonton lagi",
-      "body": "Meja 8-A. Dua mangkok ramen, matcha buat Aby, lemon tea buat Marr. Bucuk motret makanannya dulu sebelum boleh disentuh, dan Marr nurut kayak biasa. Habis itu kita ke bioskop — film lagi, persis kayak kencan pertama dua tahun lalu. Bedanya: kali ini Marr nggak lupa foto. Utang dokumentasi dari 2024 akhirnya kebayar.",
+      "body": "Meja 8-A. Dua mangkok ramen, matcha buat Aby, lemon tea buat Marr. Bucuk motret makanannya dulu sebelum boleh disentuh, dan Marr nurut kayak biasa. Habis itu kita ke bioskop — film lagi, persis kayak kencan pertama tiga tahun lalu. Bedanya: kali ini Marr nggak lupa foto. Utang dokumentasi dari 2023 akhirnya kebayar.",
       "photo": "2026-09-12-bioskop-lobi.jpg",
       "pin": true,
-      "photoCaption": "Ini dari hari itu juga. Lobi bioskop, karpet hijau, antrian orang di belakang, Aby di depan dan Marr nyender di bahunya. Persis foto yang dua tahun lalu kita lupa ambil."
+      "photoCaption": "Ini dari hari itu juga. Lobi bioskop, karpet hijau, antrian orang di belakang, Aby di depan dan Marr nyender di bahunya. Persis foto yang tiga tahun lalu kita lupa ambil."
     }
   ]
 }

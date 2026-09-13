@@ -8,13 +8,20 @@ services:
       PORT: 3000
       DB_PATH: /app/data/aniv.sqlite
     volumes:
-      # Live-edit content, photos and the site without rebuilding the image.
       - ./content:/app/content:ro
-      # rw so `docker compose run --rm aniv npm run images` can write _web/_thumb
       - ./images:/app/images
       - ./public:/app/public:ro
-      # The database survives container restarts.
       - aniv-data:/app/data
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: aniv-ngrok
+    command: http aniv:3000
+    environment:
+      NGROK_AUTHTOKEN: 2RVYz7IoxvGWS42Rf8Nnd2ycW1x_53KFB92HSYvZfgeNAoKmy
+    depends_on:
+      - aniv
     restart: unless-stopped
 
 volumes:

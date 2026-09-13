@@ -2,53 +2,41 @@
   "_comment": "EDIT ME EACH YEAR. Everything here shows up on the site. No code changes needed.",
   "site": {
     "title": "Aniv — Marco & Aby",
-    "tagline": "dua tahun, dan Aby masih miliknya Marr",
+    "tagline": "tiga tahun, dan Aby masih miliknya Marr",
     "favicon": "🤍"
   },
   "people": {
     "her": {
       "name": "Ayu Sihombing",
       "short": "Ayu",
-      "nicknames": [
-        "Aby",
-        "Ayu Baby",
-        "Bebelac Gold",
-        "Bucuk"
-      ],
+      "nicknames": ["Aby", "Ayu Baby", "Bebelac Gold", "Bucuk"],
       "initial": "A"
     },
     "him": {
       "name": "Marco",
       "short": "Marco",
-      "nicknames": [
-        "Marco"
-      ],
+      "nicknames": ["Marco"],
       "initial": "M"
     }
   },
   "dates": {
     "_comment": "ISO format. 'together' drives the live day-counter. A month-only value like \"2025-11\" is fine where the day isn't known.",
-    "firstMessage": "2024-08-21",
-    "together": "2024-09-02",
-    "firstDate": "2024-09-16",
+    "firstMessage": "2023-08-21",
+    "together": "2023-09-02",
+    "firstDate": "2023-09-16",
     "firstDateApprox": true,
     "anniversaryDay": "09-02",
     "graduation": "2025-11"
   },
   "milestones": {
     "_comment": "Extra counters shown under the main day-counter.",
-    "show": [
-      "days",
-      "hours",
-      "months",
-      "nextAnniversary"
-    ]
+    "show": ["days", "hours", "months", "nextAnniversary"]
   },
   "hero": {
-    "kicker": "02 September 2024 — hari Marr menyebut Aby Indonesianya",
+    "kicker": "02 September 2023 — hari Marr menyebut Aby Indonesianya",
     "rotatingLines": [
       "Marr nggak pernah nembak Aby. Marr cuma memutuskan Aby miliknya.",
-      "Dua tahun. Masih Aby. Selalu Aby.",
+      "Tiga tahun. Masih Aby. Selalu Aby.",
       "Bucuk, kalau dunia berat, kita berat bareng.",
       "Aby bukan sekadar pacarnya Marr. Aby tujuannya.",
       "Bebelac Gold — nutrisi terbaik buat hidupnya Marr.",

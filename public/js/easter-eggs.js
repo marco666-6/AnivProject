@@ -34,7 +34,7 @@ export function initEasterEggs({ notes = [], showReveal }) {
       buf = (buf + e.key.toLowerCase()).slice(-16);
       if (buf.endsWith('indonesia')) {
         buf = '';
-        showReveal('Aby Indonesianya Marr.\n\nTanah, rumah, tempat Marr pulang. Dua tahun lalu Marr belum ngerti kenapa kata itu yang keluar. Sekarang ngerti.');
+        showReveal('Aby Indonesianya Marr.\n\nTanah, rumah, tempat Marr pulang. Tiga tahun lalu Marr belum ngerti kenapa kata itu yang keluar. Sekarang ngerti.');
         confetti(60);
       }
       if (buf.endsWith('bucuk')) {

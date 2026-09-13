@@ -6,7 +6,7 @@ The copy talks to her as **Aby / Bebelac / Bucuk** and refers to him as **Marr**
 not `kamu`/`aku` — keep that voice when you add to `content/`.
 Built to be *added to* every year, not rebuilt.
 
-Day zero: **2 September 2024** — the day I called you my Indonesia.
+Day zero: **2 September 2023** — the day I called you my Indonesia.
 
 ---
 
